@@ -1,74 +1,7 @@
 {
-  "contact": {
-    "kicker": "06 · Contact",
-    "title": "Let's build something worth shipping.",
-    "sub": "Open to Product Manager roles, especially 0-to-1 and founding PM opportunities.",
-    "email": "yuktarthnagar@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/yuktarth-nagar-b3920b147/"
-  },
-  "skills": {
-    "kicker": "04 · Skills",
-    "title": "What I bring to a team.",
-    "clusters": [
-      {
-        "name": "Product",
-        "tags": [
-          "Product Strategy",
-          "Roadmapping",
-          "0-to-1 Product Development",
-          "User Research",
-          "Product Vision",
-          "PRD Writing",
-          "Design Thinking"
-        ]
-      },
-      {
-        "name": "Execution",
-        "tags": [
-          "Agile",
-          "Scrum",
-          "Sprint Planning",
-          "JIRA",
-          "Wireframing / Figma",
-          "SIT / UAT",
-          "Requirement Gathering"
-        ]
-      },
-      {
-        "name": "Leadership & Delivery",
-        "tags": [
-          "Cross-functional Collaboration",
-          "Stakeholder Management",
-          "Digital Transformation",
-          "Process Optimization",
-          "Team Leadership",
-          "A/B Testing"
-        ]
-      },
-      {
-        "name": "Builder toolkit",
-        "tags": [
-          "AI-assisted Development",
-          "Rapid Prototyping",
-          "End-to-end Delivery",
-          "Idea → Live Product"
-        ]
-      }
-    ],
-    "education": {
-      "title": "Education",
-      "items": [
-        {
-          "degree": "MBA/PGDM, Marketing",
-          "school": "Birla Institute of Management Technology, Noida · 2017–2019"
-        },
-        {
-          "degree": "B.Tech, Computer Science & Engineering",
-          "school": "DIT University, Dehradun · 2013–2017"
-        }
-      ],
-      "note": "The CS + MBA combination is exactly what lets me go from idea to shipped product without waiting on a dev team."
-    }
+  "site": {
+    "title": "Yuktarth Nagar · Product Manager",
+    "description": "Yuktarth Nagar, Product Manager with 6+ years in edtech and fintech. I ship products end to end, not just roadmaps."
   },
   "nav": {
     "ctaLabel": "Hire Me"
@@ -95,10 +28,6 @@
       { "count": 4, "suffix": "", "label": "products shipped\nsolo, top to bottom" }
     ]
   },
-  "site": {
-    "title": "Yuktarth Nagar · Product Manager",
-    "description": "Yuktarth Nagar, Product Manager with 6+ years in edtech and fintech. I ship products end to end, not just roadmaps."
-  },
   "experience": {
     "kicker": "02 · Experience",
     "title": "Where I've put it into practice.",
@@ -115,13 +44,7 @@
           "Targeting a drop in assessment creation time from hours to **under 5 minutes** for non-technical content managers and curriculum leads",
           "Implemented rapid prototyping and validation cycles to accelerate discovery and reduce development overhead"
         ],
-        "chips": [
-          "User Management",
-          "Content Management (CMS)",
-          "Learning Management",
-          "Export (CSV/JSON)",
-          "Master Data (LO)"
-        ]
+        "chips": ["User Management", "Content Management (CMS)", "Learning Management", "Export (CSV/JSON)", "Master Data (LO)"]
       },
       {
         "icon": "💬",
@@ -151,6 +74,26 @@
       }
     ]
   },
+  "impact": {
+    "title": "Impact, by role",
+    "sub": "Each role measured success differently, so these sit side by side rather than on one shared scale.",
+    "columns": [
+      {
+        "heading": "ConveGenius · SwiftChat",
+        "stats": [
+          { "value": "269%", "label": "engagement lift from iterative A/B testing" },
+          { "value": "150M+", "label": "students reached nationwide" }
+        ]
+      },
+      {
+        "heading": "SBI Card",
+        "stats": [
+          { "value": "80%", "label": "increase in digital engagement" },
+          { "value": "11+", "label": "project deliveries led" }
+        ]
+      }
+    ]
+  },
   "projectsSection": {
     "kicker": "03 · Projects",
     "title": "Things I've built end to end.",
@@ -158,32 +101,91 @@
     "statLine": "🏆 Top 1% globally for code shipped on Lovable in 2025, 422K+ lines generated across these builds",
     "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
   },
-  "about": {
-    "kicker": "01 · About",
-    "title": "I believe the fastest way to\nvalidate an idea is to build it.",
-    "text": "I'm a Product Manager currently owning **CLMS**, ConveGenius's content & learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 150M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games, using the same product instincts I bring to my day job.",
-    "stats": [
+  "recognition": {
+    "badge": "🎖️ Official recognition",
+    "title": "VARMS · Visitor & Resource Management System",
+    "text": "Built for the 330 Field Regiment, Indian Army. I volunteered to lead a remote team through a two-weekend sprint to conceive, build, and deploy a tailored database system streamlining administrative and HRMS workflows for the regiment.",
+    "quote": "I take this opportunity to convey my profound appreciation for the outstanding work by you in designing and development of database digitization and management software VARMS for the unit.",
+    "quoteAttribution": "Letter of Appreciation, Commanding Officer Col Ankit Misra, Jan 2026",
+    "chips": ["Stakeholder Management", "Agile Delivery", "Product Strategy"],
+    "note": "A private deployment for the Indian Army; there's no public link to visit.",
+    "letterImage": "images/varms-letter.jpg"
+  },
+  "projects": [
+    {
+      "url": "https://yankstcg-card-claimer.vercel.app/",
+      "screenshot": "images/yankstcg.jpg",
+      "screenshotAlt": "Yanks TCG live sale homepage showing stock counts and category cards",
+      "browserUrl": "yankstcg-card-claimer.vercel.app",
+      "tag": "Marketplace",
+      "title": "Yanks TCG · Live Sale Platform",
+      "description": "A live-sale marketplace built for a Pokémon card collector community. Real-time inventory across singles, graded slabs, sealed products, and accessories, plus live bidding and \"Box Breaks\" with numbered claim slots.",
+      "chips": ["Real-time inventory", "Live bidding", "Box Breaks"],
+      "proof": "Built a real-time marketplace from scratch for an active WhatsApp community"
+    },
+    {
+      "url": "https://yanks-diecast.vercel.app/",
+      "screenshot": "images/yanksdiecast.jpg",
+      "screenshotAlt": "Yanks Diecast live sale homepage with filters and stock counts",
+      "browserUrl": "yanks-diecast.vercel.app",
+      "tag": "Marketplace",
+      "title": "Yanks Diecast · Live Sale Platform",
+      "description": "A sister marketplace for diecast car collectors with a full faceted-search catalog (brand, scale, maker, condition), dynamic pricing, stock tracking, and a claim-based checkout flow across dozens of live SKUs.",
+      "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"],
+      "proof": "Shipped a second product line by extending the same core system"
+    },
+    {
+      "url": "https://math-tug-masters-main.vercel.app/",
+      "screenshot": "images/mathtug.jpg",
+      "screenshotAlt": "Math Tug-of-War game screen with team selection and difficulty levels",
+      "browserUrl": "math-tug-masters.vercel.app",
+      "tag": "EdTech",
+      "title": "Math Tug-of-War · Classroom Game",
+      "description": "A tug-of-war style math game built for classroom touchscreen TVs. Five difficulty tiers, timed rounds, a streak-based \"Fire Mode\" mechanic, and multi-language support.",
+      "chips": ["5 difficulty tiers", "Timed rounds", "Fire Mode streaks"],
+      "proof": "Applied day-job edtech instincts to a self-directed classroom product"
+    },
+    {
+      "url": "https://roomie-dish-dash-main.vercel.app/",
+      "screenshot": "images/roomiedish.jpg",
+      "screenshotAlt": "Krishna Kunj Stays room selection screen for ordering food",
+      "browserUrl": "roomie-dish-dash.vercel.app",
+      "tag": "Utility",
+      "title": "Krishna Kunj Stays · Room Service",
+      "description": "A room-service ordering tool built for the homestay I lived at, after one too many phone calls and WhatsApp messages to the owner just to order food. Guests pick their room, browse the menu, and the order gets formatted and sent straight to the kitchen over WhatsApp.",
+      "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
+      "proof": "Replaced manual phone/WhatsApp ordering with a two-minute self-serve flow"
+    }
+  ],
+  "skills": {
+    "kicker": "04 · Skills",
+    "title": "What I bring to a team.",
+    "clusters": [
       {
-        "count": 6,
-        "suffix": "+",
-        "label": "years in product"
+        "name": "Product",
+        "tags": ["Product Strategy", "Roadmapping", "0-to-1 Product Development", "User Research", "Product Vision", "PRD Writing", "Design Thinking"]
       },
       {
-        "count": 150,
-        "suffix": "M+",
-        "label": "students impacted\nvia SwiftChat"
+        "name": "Execution",
+        "tags": ["Agile", "Scrum", "Sprint Planning", "JIRA", "Wireframing / Figma", "SIT / UAT", "Requirement Gathering"]
       },
       {
-        "count": 269,
-        "suffix": "%",
-        "label": "engagement lift from\nA/B testing"
+        "name": "Leadership & Delivery",
+        "tags": ["Cross-functional Collaboration", "Stakeholder Management", "Digital Transformation", "Process Optimization", "Team Leadership", "A/B Testing"]
       },
       {
-        "count": 4,
-        "suffix": "",
-        "label": "products shipped\nsolo, top to bottom"
+        "name": "Builder toolkit",
+        "tags": ["AI-assisted Development", "Rapid Prototyping", "End-to-end Delivery", "Idea → Live Product"]
       }
-    ]
+    ],
+    "education": {
+      "title": "Education",
+      "items": [
+        { "degree": "MBA/PGDM, Marketing", "school": "Birla Institute of Management Technology, Noida · 2017–2019" },
+        { "degree": "B.Tech, Computer Science & Engineering", "school": "DIT University, Dehradun · 2013–2017" }
+      ],
+      "note": "The CS + MBA combination is exactly what lets me go from idea to shipped product without waiting on a dev team."
+    }
   },
   "testimonialsSection": {
     "kicker": "05 · Testimonials",
