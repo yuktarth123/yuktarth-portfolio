@@ -204,6 +204,7 @@ collections:
               - { label: "Subtext", name: "sub", widget: "text" }
               - { label: "Email", name: "email", widget: "string" }
               - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+              - { label: "Resume file", name: "resumeUrl", widget: "file" }
 
           - label: "Footer"
             name: "footer"

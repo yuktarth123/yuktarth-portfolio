@@ -162,7 +162,7 @@ function renderContact(c) {
   document.getElementById('contactLinks').innerHTML = `
     <a class="btn btn-primary" href="mailto:${escapeHtml(c.email)}">Email me</a>
     <a class="btn btn-ghost" href="${escapeHtml(c.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>
-    <a class="btn btn-ghost" href="#" id="resumeBtn">Download Resume</a>
+    <a class="btn btn-ghost" href="${escapeHtml(c.resumeUrl)}" download id="resumeBtn">Download Resume</a>
   `;
 }
 
@@ -256,15 +256,6 @@ function initInteractions() {
     });
   }, { threshold: 0.5 });
   statEls.forEach(el => statObserver.observe(el));
-
-  // Resume button placeholder
-  const resumeBtn = document.getElementById('resumeBtn');
-  if (resumeBtn) {
-    resumeBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      alert('Attach your resume PDF here: replace the #resumeBtn link in index.html with a path to your file.');
-    });
-  }
 }
 
 // ---------- Boot ----------
