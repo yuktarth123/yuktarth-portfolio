@@ -2,14 +2,22 @@
 
 Your portfolio's text now lives in one file, `content.json`, and there's an
 admin page at `/admin` (Decap CMS) that edits it through a form instead of
-raw code. Once this is wired up: you go to `yoursite.vercel.app/admin`, log
-in with GitHub, edit any field, hit publish — it commits the change to your
-GitHub repo, and Vercel redeploys the live site automatically, usually within
-a minute.
+raw code. You go to `yoursite.vercel.app/admin`, log in with GitHub, edit any
+field, hit publish — it commits the change to your GitHub repo, and Vercel
+redeploys the live site automatically, usually within a minute.
 
-Everything below is a one-time setup. All of it has to happen in *your*
-accounts (GitHub, Vercel) — I can't create those for you — but it's about
-10 minutes of clicking, no code.
+**Status: this is already done for this site.**
+
+- Repo: https://github.com/yuktarth123/yuktarth-portfolio
+- Live site: https://yuktarth-portfolio.vercel.app
+- Admin: https://yuktarth-portfolio.vercel.app/admin
+- GitHub OAuth App: "Yuktarth Portfolio CMS" (github.com/settings/developers)
+- `GITHUB_CLIENT_ID` / `GITHUB_CLIENT_SECRET` are set in Vercel → Settings →
+  Environment Variables (marked Sensitive, so their values aren't visible
+  there — see the OAuth App page if you ever need to regenerate the secret)
+
+The steps below are kept for reference — e.g. if you ever fork this to a new
+repo, rotate the client secret, or want to understand what each piece does.
 
 ## 1. Push this project to GitHub
 
