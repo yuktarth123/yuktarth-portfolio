@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Content Admin</title>
+  <!-- Pinned to an absolute path: without this, visiting /admin (no
+       trailing slash) makes the browser resolve config.yml against the
+       domain root instead of /admin/, which 404s. -->
+  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   <style>
     body { font-family: -apple-system, sans-serif; }
   </style>
