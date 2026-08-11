@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yuktarth Nagar · Product Manager</title>
+<meta name="description" content="Yuktarth Nagar, Product Manager with 6+ years in edtech and fintech. I ship products end to end, not just roadmaps." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="noise"></div>
+
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand">YN<span class="dot">.</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" data-nav>About</a>
+    <a href="#experience" data-nav>Experience</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#testimonials" data-nav>Testimonials</a>
+    <a href="#contact" data-nav>Contact</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <a href="#contact" class="btn btn-primary btn-nav" id="navCta">Hire Me</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-inner">
+      <p class="reveal eyebrow" id="heroEyebrow"></p>
+      <h1 class="reveal hero-title" id="heroHeadline"></h1>
+      <p class="reveal hero-sub" id="heroSubhead"></p>
+      <div class="reveal hero-ctas" id="heroCtas"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="reveal kicker" id="aboutKicker"></p>
+      <h2 class="reveal section-title" id="aboutTitle"></h2>
+      <p class="reveal about-text" id="aboutText"></p>
+      <div class="stats" id="aboutStats"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="reveal kicker" id="experienceKicker"></p>
+      <h2 class="reveal section-title" id="experienceTitle"></h2>
+
+      <div class="timeline" id="timeline"></div>
+
+      <div class="impact reveal">
+        <h3 class="impact-title" id="impactTitle"></h3>
+        <p class="impact-sub" id="impactSub"></p>
+        <div class="impact-cols" id="impactCols"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-tinted" id="projects">
+    <div class="container">
+      <p class="reveal kicker" id="projectsKicker"></p>
+      <h2 class="reveal section-title" id="projectsTitle"></h2>
+      <p class="reveal section-intro" id="projectsIntro"></p>
+      <p class="reveal section-stat-line" id="projectsStatLine"></p>
+
+      <div class="recognition reveal" id="recognition"></div>
+
+      <p class="reveal projects-subhead" id="projectsSubhead"></p>
+
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="reveal kicker" id="skillsKicker"></p>
+      <h2 class="reveal section-title" id="skillsTitle"></h2>
+
+      <div class="skills-grid" id="skillsGrid"></div>
+
+      <div class="education reveal" id="education"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-tinted" id="testimonials">
+    <div class="container">
+      <p class="reveal kicker" id="testimonialsKicker"></p>
+      <h2 class="reveal section-title" id="testimonialsTitle"></h2>
+
+      <div class="testimonials-grid" id="testimonialsGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <p class="reveal kicker" id="contactKicker"></p>
+      <h2 class="reveal section-title" id="contactTitle"></h2>
+      <p class="reveal contact-sub" id="contactSub"></p>
+      <div class="reveal contact-links" id="contactLinks"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span id="footerName"></span>
+    <span id="footerTagline"></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

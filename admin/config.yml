@@ -1,0 +1,213 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  base_url: https://YOUR-VERCEL-DOMAIN.vercel.app
+  auth_endpoint: api/auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - file: "content.json"
+        label: "Portfolio Content"
+        name: "portfolio"
+        fields:
+          - label: "Browser Tab / SEO"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Browser Tab Title", name: "title", widget: "string" }
+              - { label: "Meta Description", name: "description", widget: "text" }
+
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "\"Hire Me\" Button Label", name: "ctaLabel", widget: "string" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Location line", name: "eyebrow", widget: "string" }
+              - { label: "Headline (before highlighted word)", name: "headline", widget: "string" }
+              - { label: "Highlighted word", name: "headlineHighlight", widget: "string" }
+              - { label: "Headline (after highlighted word)", name: "headlineEnd", widget: "string" }
+              - { label: "Subheadline", name: "subhead", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
+              - { label: "Primary button label", name: "ctaPrimaryLabel", widget: "string" }
+              - { label: "Primary button link", name: "ctaPrimaryHref", widget: "string" }
+              - { label: "Secondary button label", name: "ctaSecondaryLabel", widget: "string" }
+              - { label: "Secondary button link", name: "ctaSecondaryHref", widget: "string" }
+
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Kicker (e.g. \"01 · About\")", name: "kicker", widget: "string" }
+              - { label: "Section heading", name: "title", widget: "text", hint: "Press enter for a line break" }
+              - { label: "Body paragraph", name: "text", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
+              - label: "Stat tiles"
+                name: "stats"
+                widget: "list"
+                summary: "{{fields.count}}{{fields.suffix}} — {{fields.label}}"
+                fields:
+                  - { label: "Number", name: "count", widget: "number", value_type: "int" }
+                  - { label: "Suffix (e.g. +, M+, %)", name: "suffix", widget: "string", required: false }
+                  - { label: "Label", name: "label", widget: "text", hint: "Press enter for a line break" }
+
+          - label: "Experience"
+            name: "experience"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Section heading", name: "title", widget: "string" }
+              - label: "Roles (most recent first)"
+                name: "roles"
+                widget: "list"
+                summary: "{{fields.role}} — {{fields.company}}"
+                fields:
+                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
+                  - { label: "Role title", name: "role", widget: "string" }
+                  - { label: "Company", name: "company", widget: "string" }
+                  - { label: "Dates (e.g. \"Jul 2025 - Present\")", name: "dates", widget: "string" }
+                  - label: "Bullet points"
+                    name: "bullets"
+                    widget: "list"
+                    field: { label: "Bullet", name: "bullet", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
+                  - label: "Skill chips (optional)"
+                    name: "chips"
+                    widget: "list"
+                    required: false
+                    field: { label: "Chip", name: "chip", widget: "string" }
+
+          - label: "Impact section"
+            name: "impact"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Subtext", name: "sub", widget: "text" }
+              - label: "Columns (one per role)"
+                name: "columns"
+                widget: "list"
+                summary: "{{fields.heading}}"
+                fields:
+                  - { label: "Column heading", name: "heading", widget: "string" }
+                  - label: "Stats"
+                    name: "stats"
+                    widget: "list"
+                    summary: "{{fields.value}} — {{fields.label}}"
+                    fields:
+                      - { label: "Value (e.g. \"269%\")", name: "value", widget: "string" }
+                      - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Projects section intro"
+            name: "projectsSection"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Section heading", name: "title", widget: "string" }
+              - { label: "Intro line", name: "intro", widget: "text" }
+              - { label: "Stat/credibility line", name: "statLine", widget: "string" }
+              - { label: "Subhead above the project grid", name: "subhead", widget: "string" }
+
+          - label: "Recognition banner (Army letter)"
+            name: "recognition"
+            widget: "object"
+            fields:
+              - { label: "Badge text", name: "badge", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "text", widget: "text" }
+              - { label: "Quote (must be real, verbatim text from the letter)", name: "quote", widget: "text" }
+              - { label: "Quote attribution", name: "quoteAttribution", widget: "string" }
+              - label: "Skill chips"
+                name: "chips"
+                widget: "list"
+                field: { label: "Chip", name: "chip", widget: "string" }
+              - { label: "Note", name: "note", widget: "string" }
+              - { label: "Letter photo", name: "letterImage", widget: "image" }
+
+          - label: "Live projects (cards)"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Live site URL", name: "url", widget: "string" }
+              - { label: "Screenshot", name: "screenshot", widget: "image" }
+              - { label: "Screenshot alt text", name: "screenshotAlt", widget: "string" }
+              - { label: "Browser bar URL text", name: "browserUrl", widget: "string" }
+              - { label: "Category tag (e.g. Marketplace, EdTech)", name: "tag", widget: "string" }
+              - { label: "Project title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Feature chips"
+                name: "chips"
+                widget: "list"
+                field: { label: "Chip", name: "chip", widget: "string" }
+              - { label: "Proof line (italic, under the chips)", name: "proof", widget: "string" }
+
+          - label: "Skills"
+            name: "skills"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Section heading", name: "title", widget: "string" }
+              - label: "Skill clusters"
+                name: "clusters"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Cluster name", name: "name", widget: "string" }
+                  - label: "Tags"
+                    name: "tags"
+                    widget: "list"
+                    field: { label: "Tag", name: "tag", widget: "string" }
+              - label: "Education"
+                name: "education"
+                widget: "object"
+                fields:
+                  - { label: "Heading", name: "title", widget: "string" }
+                  - label: "Degrees"
+                    name: "items"
+                    widget: "list"
+                    summary: "{{fields.degree}}"
+                    fields:
+                      - { label: "Degree", name: "degree", widget: "string" }
+                      - { label: "School / dates", name: "school", widget: "string" }
+                  - { label: "Note below education", name: "note", widget: "text" }
+
+          - label: "Testimonials section intro"
+            name: "testimonialsSection"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Section heading", name: "title", widget: "string" }
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Initials (for the avatar)", name: "initials", widget: "string" }
+              - { label: "Quote (must be genuine, don't alter someone's words)", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role / relationship", name: "role", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Kicker", name: "kicker", widget: "string" }
+              - { label: "Heading", name: "title", widget: "string" }
+              - { label: "Subtext", name: "sub", widget: "text" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }

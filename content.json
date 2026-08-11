@@ -1,0 +1,231 @@
+{
+  "site": {
+    "title": "Yuktarth Nagar · Product Manager",
+    "description": "Yuktarth Nagar, Product Manager with 6+ years in edtech and fintech. I ship products end to end, not just roadmaps."
+  },
+  "nav": {
+    "ctaLabel": "Hire Me"
+  },
+  "hero": {
+    "eyebrow": "📍 Dehradun, India · Open to remote",
+    "headline": "Product Manager who",
+    "headlineHighlight": "ships",
+    "headlineEnd": ", not just plans.",
+    "subhead": "6+ years across edtech and fintech. Currently own **CLMS**, ConveGenius's content & learning platform, after scaling SwiftChat's AI chatbots to **150M+ students**. I also design and ship my own products solo, end to end, using the same instincts I bring to my day job.",
+    "ctaPrimaryLabel": "See what I've built",
+    "ctaPrimaryHref": "#projects",
+    "ctaSecondaryLabel": "Get in touch",
+    "ctaSecondaryHref": "#contact"
+  },
+  "about": {
+    "kicker": "01 · About",
+    "title": "I believe the fastest way to\nvalidate an idea is to build it.",
+    "text": "I'm a Product Manager currently owning **CLMS**, ConveGenius's content & learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 150M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games, using the same product instincts I bring to my day job.",
+    "stats": [
+      { "count": 6, "suffix": "+", "label": "years in product" },
+      { "count": 150, "suffix": "M+", "label": "students impacted\nvia SwiftChat" },
+      { "count": 269, "suffix": "%", "label": "engagement lift from\nA/B testing" },
+      { "count": 4, "suffix": "", "label": "products shipped\nsolo, top to bottom" }
+    ]
+  },
+  "experience": {
+    "kicker": "02 · Experience",
+    "title": "Where I've put it into practice.",
+    "roles": [
+      {
+        "icon": "🗂️",
+        "role": "Product Manager, CLMS",
+        "company": "ConveGenius",
+        "dates": "Jul 2025 - Present",
+        "bullets": [
+          "Own product for **CLMS**, ConveGenius's platform for centralizing content creation, tagging, translation, and distribution across client instances, including government education department partners",
+          "Lead the platform's five core modules: User Management, Content Management (CMS), Learning Management, Export Management, and Master Data (LO) Management",
+          "Took the **Assessment Creation flow** from an engineering prototype to a production-ready feature, writing a 13-section PRD (~35 requirements) covering UX, acceptance criteria, and edge cases",
+          "Targeting a drop in assessment creation time from hours to **under 5 minutes** for non-technical content managers and curriculum leads",
+          "Implemented rapid prototyping and validation cycles to accelerate discovery and reduce development overhead"
+        ],
+        "chips": ["User Management", "Content Management (CMS)", "Learning Management", "Export (CSV/JSON)", "Master Data (LO)"]
+      },
+      {
+        "icon": "💬",
+        "role": "Product Manager, SwiftChat",
+        "company": "ConveGenius",
+        "dates": "Dec 2022 - Jun 2025",
+        "bullets": [
+          "Owned product vision and roadmap for chatbots on **SwiftChat**, a conversational learning platform impacting 150M+ students nationwide",
+          "Partnered with design, engineering, content, and partnerships teams to launch scalable learning products",
+          "Improved engagement by **269%** through iterative A/B testing and feature experimentation",
+          "Defined product success metrics and introduced data tracking dashboards for data-informed decision-making"
+        ],
+        "chips": []
+      },
+      {
+        "icon": "💼",
+        "role": "AI Project Manager",
+        "company": "SBI Card",
+        "dates": "May 2019 - Dec 2022",
+        "bullets": [
+          "Managed AI and automation projects across business functions, achieving an **80% increase** in digital engagement",
+          "Directed a cross-functional team of developers and testers, leading 11+ project deliveries",
+          "Designed project architecture using flowcharts and UML diagrams; coordinated API framework integration",
+          "Managed SIT/UAT cycles and owned stakeholder communication end to end"
+        ],
+        "chips": []
+      }
+    ]
+  },
+  "impact": {
+    "title": "Impact, by role",
+    "sub": "Each role measured success differently, so these sit side by side rather than on one shared scale.",
+    "columns": [
+      {
+        "heading": "ConveGenius · SwiftChat",
+        "stats": [
+          { "value": "269%", "label": "engagement lift from iterative A/B testing" },
+          { "value": "150M+", "label": "students reached nationwide" }
+        ]
+      },
+      {
+        "heading": "SBI Card",
+        "stats": [
+          { "value": "80%", "label": "increase in digital engagement" },
+          { "value": "11+", "label": "project deliveries led" }
+        ]
+      }
+    ]
+  },
+  "projectsSection": {
+    "kicker": "03 · Projects",
+    "title": "Things I've built end to end.",
+    "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
+    "statLine": "🏆 Top 1% globally for code shipped on Lovable in 2025, 422K+ lines generated across these builds",
+    "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
+  },
+  "recognition": {
+    "badge": "🎖️ Official recognition",
+    "title": "VARMS · Visitor & Resource Management System",
+    "text": "Built for the 330 Field Regiment, Indian Army. I volunteered to lead a remote team through a two-weekend sprint to conceive, build, and deploy a tailored database system streamlining administrative and HRMS workflows for the regiment.",
+    "quote": "I take this opportunity to convey my profound appreciation for the outstanding work by you in designing and development of database digitization and management software VARMS for the unit.",
+    "quoteAttribution": "Letter of Appreciation, Commanding Officer Col Ankit Misra, Jan 2026",
+    "chips": ["Stakeholder Management", "Agile Delivery", "Product Strategy"],
+    "note": "A private deployment for the Indian Army; there's no public link to visit.",
+    "letterImage": "images/varms-letter.jpg"
+  },
+  "projects": [
+    {
+      "url": "https://yankstcg-card-claimer.vercel.app/",
+      "screenshot": "images/yankstcg.jpg",
+      "screenshotAlt": "Yanks TCG live sale homepage showing stock counts and category cards",
+      "browserUrl": "yankstcg-card-claimer.vercel.app",
+      "tag": "Marketplace",
+      "title": "Yanks TCG · Live Sale Platform",
+      "description": "A live-sale marketplace built for a Pokémon card collector community. Real-time inventory across singles, graded slabs, sealed products, and accessories, plus live bidding and \"Box Breaks\" with numbered claim slots.",
+      "chips": ["Real-time inventory", "Live bidding", "Box Breaks"],
+      "proof": "Built a real-time marketplace from scratch for an active WhatsApp community"
+    },
+    {
+      "url": "https://yanks-diecast.vercel.app/",
+      "screenshot": "images/yanksdiecast.jpg",
+      "screenshotAlt": "Yanks Diecast live sale homepage with filters and stock counts",
+      "browserUrl": "yanks-diecast.vercel.app",
+      "tag": "Marketplace",
+      "title": "Yanks Diecast · Live Sale Platform",
+      "description": "A sister marketplace for diecast car collectors with a full faceted-search catalog (brand, scale, maker, condition), dynamic pricing, stock tracking, and a claim-based checkout flow across dozens of live SKUs.",
+      "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"],
+      "proof": "Shipped a second product line by extending the same core system"
+    },
+    {
+      "url": "https://math-tug-masters-main.vercel.app/",
+      "screenshot": "images/mathtug.jpg",
+      "screenshotAlt": "Math Tug-of-War game screen with team selection and difficulty levels",
+      "browserUrl": "math-tug-masters.vercel.app",
+      "tag": "EdTech",
+      "title": "Math Tug-of-War · Classroom Game",
+      "description": "A tug-of-war style math game built for classroom touchscreen TVs. Five difficulty tiers, timed rounds, a streak-based \"Fire Mode\" mechanic, and multi-language support.",
+      "chips": ["5 difficulty tiers", "Timed rounds", "Fire Mode streaks"],
+      "proof": "Applied day-job edtech instincts to a self-directed classroom product"
+    },
+    {
+      "url": "https://roomie-dish-dash-main.vercel.app/",
+      "screenshot": "images/roomiedish.jpg",
+      "screenshotAlt": "Krishna Kunj Stays room selection screen for ordering food",
+      "browserUrl": "roomie-dish-dash.vercel.app",
+      "tag": "Utility",
+      "title": "Krishna Kunj Stays · Room Service",
+      "description": "A room-service ordering tool built for the homestay I lived at, after one too many phone calls and WhatsApp messages to the owner just to order food. Guests pick their room, browse the menu, and the order gets formatted and sent straight to the kitchen over WhatsApp.",
+      "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
+      "proof": "Replaced manual phone/WhatsApp ordering with a two-minute self-serve flow"
+    }
+  ],
+  "skills": {
+    "kicker": "04 · Skills",
+    "title": "What I bring to a team.",
+    "clusters": [
+      {
+        "name": "Product",
+        "tags": ["Product Strategy", "Roadmapping", "0-to-1 Product Development", "User Research", "Product Vision", "PRD Writing", "Design Thinking"]
+      },
+      {
+        "name": "Execution",
+        "tags": ["Agile", "Scrum", "Sprint Planning", "JIRA", "Wireframing / Figma", "SIT / UAT", "Requirement Gathering"]
+      },
+      {
+        "name": "Leadership & Delivery",
+        "tags": ["Cross-functional Collaboration", "Stakeholder Management", "Digital Transformation", "Process Optimization", "Team Leadership", "A/B Testing"]
+      },
+      {
+        "name": "Builder toolkit",
+        "tags": ["AI-assisted Development", "Rapid Prototyping", "End-to-end Delivery", "Idea → Live Product"]
+      }
+    ],
+    "education": {
+      "title": "Education",
+      "items": [
+        { "degree": "MBA/PGDM, Marketing", "school": "Birla Institute of Management Technology, Noida · 2017–2019" },
+        { "degree": "B.Tech, Computer Science & Engineering", "school": "DIT University, Dehradun · 2013–2017" }
+      ],
+      "note": "The CS + MBA combination is exactly what lets me go from idea to shipped product without waiting on a dev team."
+    }
+  },
+  "testimonialsSection": {
+    "kicker": "05 · Testimonials",
+    "title": "What people say about working with me."
+  },
+  "testimonials": [
+    {
+      "initials": "SN",
+      "quote": "I've worked with Yuktarth for over three years, including more than a year as his direct manager. He has a good grasp of technical concepts, which helps him collaborate smoothly with engineering teams. He is especially strong when it comes to documentation and follow-through — clear PRDs, structured specs, and well-maintained trackers are areas where he brings a lot of discipline to the team.",
+      "name": "Sri Nitya Anupindi",
+      "role": "AVP @ ConveGenius · direct manager"
+    },
+    {
+      "initials": "Y",
+      "quote": "Yuktarth is the 'silent warrior' you are looking for. It is rare to find a professional who combines a Computer Science background with an MBA and actually utilizes both skill sets equally well. In a chaotic environment, he is the anchor: calm, composed, and obsessively organized. If you want a Product Manager who delivers beyond par, hire Yuktarth.",
+      "name": "Yashdeep",
+      "role": "AI Technical Product Lead · hired Yuktarth"
+    },
+    {
+      "initials": "BR",
+      "quote": "I had the pleasure of working with Yuktarth during his tenure in the AI Project Management team at SBI Card, and he consistently demonstrated exceptional ownership, technical clarity, and a strong problem-solving mindset. What truly sets him apart is his ability to coordinate seamlessly across stakeholders, vendors, developers, and testers.",
+      "name": "Bhrigu Rana",
+      "role": "AI Transformation Leader · SBI Card"
+    },
+    {
+      "initials": "PS",
+      "quote": "As a Product Manager, he expertly managed numerous internal and external feature releases on our customer care digital assistant and smart agent assist solution, consistently achieving minimal issues post-launch. He possesses a fantastic blend of technical understanding and business acumen.",
+      "name": "Puneet Singh",
+      "role": "Conversational AI & Product · direct manager"
+    }
+  ],
+  "contact": {
+    "kicker": "06 · Contact",
+    "title": "Let's build something worth shipping.",
+    "sub": "Open to Product Manager roles, especially 0-to-1 and founding PM opportunities.",
+    "email": "yuktarthnagar@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/yuktarth-nagar-b3920b147/"
+  },
+  "footer": {
+    "name": "Yuktarth Nagar",
+    "tagline": "Built to ship, not just to look pretty · © 2026"
+  }
+}
