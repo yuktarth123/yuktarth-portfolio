@@ -367,7 +367,7 @@ ul { list-style: none; }
 .project-card:hover .project-link { color: var(--accent); }
 
 /* ---------- Skills ---------- */
-.skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-bottom: 56px; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-bottom: 56px; }
 .skill-cluster {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px;
 }

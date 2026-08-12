@@ -174,19 +174,15 @@
     "clusters": [
       {
         "name": "Product",
-        "tags": ["Product Strategy", "Roadmapping", "0-to-1 Product Development", "User Research", "Product Vision", "PRD Writing", "Design Thinking"]
+        "tags": ["0-to-1 Product Development", "Roadmapping", "User Research", "PRD & Requirements Writing"]
       },
       {
         "name": "Execution",
-        "tags": ["Agile", "Scrum", "Sprint Planning", "JIRA", "Wireframing / Figma", "SIT / UAT", "Requirement Gathering"]
-      },
-      {
-        "name": "Leadership & Delivery",
-        "tags": ["Cross-functional Collaboration", "Stakeholder Management", "Vendor Coordination", "Process Optimization", "Team Leadership", "A/B Testing"]
+        "tags": ["Agile & Scrum", "A/B Testing", "Wireframing (Figma, Whimsical)", "Stakeholder & Vendor Management"]
       },
       {
         "name": "Builder toolkit",
-        "tags": ["AI Pair-Programming (Lovable, Claude Code)", "Rapid Prototyping", "End-to-end Delivery", "Idea → Live Product"]
+        "tags": ["AI Pair-Programming (Lovable, Claude Code)", "Rapid Prototyping", "Idea → Live Product"]
       }
     ],
     "education": {
