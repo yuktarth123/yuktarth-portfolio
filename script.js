@@ -90,18 +90,19 @@ function renderRoleScene(r) {
   }
   if (r.company === 'SBI Card') {
     return `
-      <div class="chat-scene">
-        <div class="chat-row chat-row-1">
-          <div class="bot-avatar"></div>
-          <div class="bubble">Hi! I can help with your credit limit request.</div>
-        </div>
-        <div class="chat-row chat-row-2">
-          <div class="bot-avatar"></div>
-          <div class="bubble">Good news — your limit increase is approved.</div>
-        </div>
-        <div class="card-row">
-          <div class="credit-card"></div>
-          <div class="card-badge">${CHECK_ICON}</div>
+      <div class="ila-panel">
+        <div class="ila-header"><span class="ila-badge">ASK ILA</span></div>
+        <div class="ila-banner"><div class="ila-avatar"></div></div>
+        <div class="ila-body">
+          <div class="ila-greet">
+            <p class="ila-greet-text">Hello! I am ILA, your SBI Card assistant.</p>
+            <span class="ila-time">10:04 PM</span>
+          </div>
+          <div class="ila-actions">
+            <span class="ila-pill ila-action-1">Login</span>
+            <span class="ila-pill ila-action-2">Statement</span>
+            <span class="ila-pill ila-pill-filled ila-action-3">Bill Pay &amp; Recharge<span class="check-pop">${CHECK_ICON}</span></span>
+          </div>
         </div>
       </div>
     `;
