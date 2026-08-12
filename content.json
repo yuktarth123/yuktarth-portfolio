@@ -134,9 +134,8 @@
       "browserUrl": "yankstcg-card-claimer.vercel.app",
       "tag": "Marketplace",
       "title": "Yanks TCG · Live Sale Platform",
-      "description": "A live-sale marketplace built for a Pokémon card collector community. Real-time inventory across singles, graded slabs, sealed products, and accessories, plus live bidding and \"Box Breaks\" with numbered claim slots.",
-      "chips": ["Real-time inventory", "Live bidding", "Box Breaks"],
-      "proof": "Built a real-time marketplace from scratch for an active WhatsApp community"
+      "description": "A real-time marketplace for a Pokémon card collector's WhatsApp community, with live bidding and numbered \"Box Break\" claims.",
+      "chips": ["Real-time inventory", "Live bidding", "Box Breaks"]
     },
     {
       "url": "https://yanks-diecast.vercel.app/",
@@ -145,9 +144,8 @@
       "browserUrl": "yanks-diecast.vercel.app",
       "tag": "Marketplace",
       "title": "Yanks Diecast · Live Sale Platform",
-      "description": "A sister marketplace for diecast car collectors with a full faceted-search catalog (brand, scale, maker, condition), dynamic pricing, stock tracking, and a claim-based checkout flow across dozens of live SKUs.",
-      "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"],
-      "proof": "Shipped a second product line by extending the same core system"
+      "description": "The same marketplace engine, extended for diecast car collectors with faceted search and dynamic pricing across dozens of live SKUs.",
+      "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"]
     },
     {
       "url": "https://math-tug-masters-main.vercel.app/",
@@ -156,9 +154,8 @@
       "browserUrl": "math-tug-masters.vercel.app",
       "tag": "EdTech",
       "title": "Math Tug-of-War · Classroom Game",
-      "description": "A tug-of-war style math game built for classroom touchscreen TVs. Five difficulty tiers, timed rounds, a streak-based \"Fire Mode\" mechanic, and multi-language support.",
-      "chips": ["5 difficulty tiers", "Timed rounds", "Fire Mode streaks"],
-      "proof": "Applied day-job edtech instincts to a self-directed classroom product"
+      "description": "A tug-of-war math game for classroom touchscreen TVs, with five difficulty tiers and a streak-based \"Fire Mode.\"",
+      "chips": ["5 difficulty tiers", "Timed rounds", "Fire Mode streaks"]
     },
     {
       "url": "https://roomie-dish-dash-main.vercel.app/",
@@ -168,8 +165,7 @@
       "tag": "Utility",
       "title": "Krishna Kunj Stays · Room Service",
       "description": "A room-service ordering tool built for the homestay I lived at, after one too many phone calls and WhatsApp messages to the owner just to order food. Guests pick their room, browse the menu, and the order gets formatted and sent straight to the kitchen over WhatsApp.",
-      "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
-      "proof": "Replaced manual phone/WhatsApp ordering with a two-minute self-serve flow"
+      "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"]
     }
   ],
   "skills": {

@@ -118,7 +118,6 @@ function renderProjects(sec, recognition, projects) {
         <h3>${escapeHtml(p.title)}</h3>
         <p>${escapeHtml(p.description)}</p>
         <div class="feature-chips">${p.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>
-        <p class="project-proof">${escapeHtml(p.proof)}</p>
         <span class="project-link">View live project →</span>
       </div>
     </a>
