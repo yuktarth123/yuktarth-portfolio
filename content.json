@@ -127,10 +127,11 @@
       "description": "A real-time marketplace for a Pokémon card collector's WhatsApp community, with live bidding and numbered \"Box Break\" claims.",
       "chips": ["Real-time inventory", "Live bidding", "Box Breaks"],
       "why": [
-        "Sellers were running inventory and sales entirely over WhatsApp DMs — needed real browsing without losing the WhatsApp relationship.",
-        "Bid instead of fixed price: low-stock, high-demand cards were going unsold at a fixed price. Bidding matches scarcity to buyer FOMO and moves them.",
-        "Numbered Box Break slots turn pack-opening into a live event — buyers pick a \"lucky number\" for the card behind it.",
-        "Bidding ended up the most-used feature: cards that sat unsold for months started moving once listed as bids."
+        "Sellers were running inventory and sales entirely over WhatsApp DMs. Needed real browsing and stock visibility without losing that relationship.",
+        "Cheap, duplicate cards went unsold as fixed-price listings, since most buyers are completing a set, not chasing a single card. Selling them as bids got them moving.",
+        "Scarce, high-demand cards leave money on the table at a fixed price. Bidding lets buyer FOMO set the price instead.",
+        "Numbered Box Break slots turn pack-opening into a live event: buyers pick a \"lucky number\" for the card behind it, which drives engagement on its own.",
+        "Bidding ended up the most-used feature. Cards that sat unsold for months started moving once listed as bids."
       ]
     },
     {
@@ -143,7 +144,8 @@
       "description": "The same marketplace engine, extended for diecast car collectors with faceted search and dynamic pricing across dozens of live SKUs.",
       "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"],
       "why": [
-        "Validated with a poll in the WhatsApp community first — over 70% wanted a diecast line before I built it."
+        "Validated first: polled the WhatsApp community, and over 70% wanted a diecast line before I built anything.",
+        "Reused the same marketplace engine instead of building a new one. Bidding and box-break-style claims generalized cleanly to a second collector category."
       ]
     },
     {
@@ -170,8 +172,8 @@
       "description": "A room-service ordering tool built for the homestay I lived at, after one too many phone calls and WhatsApp messages to the owner just to order food. Guests pick their room, browse the menu, and the order gets formatted and sent straight to the kitchen over WhatsApp.",
       "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
       "why": [
-        "Built after typing out the same WhatsApp message one too many times just to order coffee during a stay — wanted to cut that friction on both sides.",
-        "Deliberately skipped payments and accounts: the goal was saving time, not building a transaction platform.",
+        "Built after typing out the same WhatsApp message one too many times just to order coffee during a stay. Wanted to cut that friction on both sides.",
+        "Deliberately skipped payments and accounts. The goal was saving time, not building a transaction platform.",
         "Adopted for day-to-day use at the homestay."
       ]
     }
