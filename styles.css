@@ -280,6 +280,33 @@ ul { list-style: none; }
 }
 .check-pop svg { width: 8px; height: 8px; }
 
+.clms-panel {
+  width: 190px; background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  overflow: hidden;
+  opacity: 0; transform: translateY(28px) scale(0.96);
+}
+.clms-header {
+  background: linear-gradient(100deg, #5b5fc7, #4ecdc4);
+  color: #fff; font-size: 11px; font-weight: 700; padding: 10px 14px;
+}
+.clms-body { padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.clms-field { display: flex; flex-direction: column; gap: 3px; opacity: 0; transform: translateY(10px); }
+.clms-label { font-size: 8.5px; color: var(--fg-faint); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+.clms-value {
+  font-size: 10px; color: var(--fg); font-weight: 600; border: 1px solid var(--border); border-radius: 6px;
+  padding: 5px 8px; background: var(--bg-tint);
+}
+.clms-stem { display: flex; flex-direction: column; gap: 3px; opacity: 0; transform: translateY(10px); }
+.clms-stem-text {
+  font-size: 9.5px; color: var(--fg-muted); line-height: 1.4; background: var(--bg-tint);
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px;
+}
+.clms-preview-btn {
+  align-self: flex-start; background: #5b5fc7; color: #fff; font-size: 10px; font-weight: 700;
+  border: none; border-radius: 999px; padding: 7px 14px; font-family: inherit;
+  opacity: 0; transform: scale(0.7);
+}
+
 .chat-scene { width: 100%; max-width: 220px; display: flex; flex-direction: column; gap: 14px; }
 .chat-row { display: flex; align-items: flex-end; gap: 10px; opacity: 0; transform: translateX(-16px) translateY(8px); }
 .bot-avatar {
@@ -317,6 +344,12 @@ ul { list-style: none; }
 .role-scene.play .chat-row-2 { animation: sceneSlideRight 0.5s ease 0.55s forwards; }
 .role-scene.play .card-row { animation: sceneCardLand 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) 0.95s forwards; }
 .role-scene.play .card-badge { animation: scenePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.45s forwards; }
+
+.role-scene.play .clms-panel { animation: sceneLand 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s forwards; }
+.role-scene.play .clms-field-1 { animation: sceneFadeUp 0.45s ease 0.5s forwards; }
+.role-scene.play .clms-field-2 { animation: sceneFadeUp 0.45s ease 0.75s forwards; }
+.role-scene.play .clms-stem { animation: sceneFadeUp 0.45s ease 1.0s forwards; }
+.role-scene.play .clms-preview-btn { animation: scenePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.3s forwards; }
 
 @keyframes sceneLand { to { opacity: 1; transform: translateY(0) scale(1); } }
 @keyframes sceneFadeUp { to { opacity: 1; transform: translateY(0); } }

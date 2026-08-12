@@ -50,6 +50,28 @@ const CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-wi
 function renderRoleScene(r) {
   if (r.company === 'ConveGenius' && r.role === 'Product Manager') {
     return `
+      <div class="clms-panel">
+        <div class="clms-header">Add Question</div>
+        <div class="clms-body">
+          <div class="clms-field clms-field-1">
+            <span class="clms-label">Question Format</span>
+            <span class="clms-value">Fill in the blanks</span>
+          </div>
+          <div class="clms-field clms-field-2">
+            <span class="clms-label">Skill Code</span>
+            <span class="clms-value">SCI-204</span>
+          </div>
+          <div class="clms-stem">
+            <span class="clms-label">Question stem</span>
+            <p class="clms-stem-text">The chemical symbol for water is ___.</p>
+          </div>
+          <button class="clms-preview-btn">Preview Question</button>
+        </div>
+      </div>
+    `;
+  }
+  if (r.company === 'ConveGenius' && r.role === 'Product Associate, SwiftChat') {
+    return `
       <div class="phone">
         <div class="phone-notch"></div>
         <div class="phone-screen">
