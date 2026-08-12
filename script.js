@@ -165,6 +165,13 @@ function renderProjects(sec, recognition, projects) {
         <p>${escapeHtml(recognition.text)}</p>
         <p class="recognition-quote">"${escapeHtml(recognition.quote)}"<br><span>${escapeHtml(recognition.quoteAttribution)}</span></p>
         <div class="feature-chips">${recognition.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>
+        ${recognition.why && recognition.why.length ? `
+        <details class="project-why">
+          <summary>Why this way</summary>
+          <ul class="project-why-list">
+            ${recognition.why.map(w => `<li>${escapeHtml(w)}</li>`).join('')}
+          </ul>
+        </details>` : ''}
         <p class="recognition-note">${escapeHtml(recognition.note)}</p>
       </div>
       <a class="recognition-letter" href="${escapeHtml(recognition.letterImage)}" target="_blank" rel="noopener">
@@ -188,6 +195,13 @@ function renderProjects(sec, recognition, projects) {
         <h3>${escapeHtml(p.title)}</h3>
         <p>${escapeHtml(p.description)}</p>
         <div class="feature-chips">${p.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>
+        ${p.why && p.why.length ? `
+        <details class="project-why" onclick="event.stopPropagation()">
+          <summary>Why this way</summary>
+          <ul class="project-why-list">
+            ${p.why.map(w => `<li>${escapeHtml(w)}</li>`).join('')}
+          </ul>
+        </details>` : ''}
         <span class="project-link">View live project →</span>
       </div>
     </a>
