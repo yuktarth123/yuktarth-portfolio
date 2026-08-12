@@ -33,11 +33,11 @@ collections:
             name: "hero"
             widget: "object"
             fields:
-              - { label: "Location line", name: "eyebrow", widget: "string" }
-              - { label: "Headline (before highlighted word)", name: "headline", widget: "string" }
-              - { label: "Highlighted word", name: "headlineHighlight", widget: "string" }
-              - { label: "Headline (after highlighted word)", name: "headlineEnd", widget: "string" }
-              - { label: "Subheadline", name: "subhead", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
+              - { label: "Eyebrow (role + location)", name: "eyebrow", widget: "string" }
+              - { label: "First name", name: "nameFirst", widget: "string" }
+              - { label: "Last name", name: "nameLast", widget: "string" }
+              - { label: "Positioning line (role + experience + differentiator)", name: "positioning", widget: "text", hint: "Wrap words in **double asterisks** for bold, *single asterisks* for italic" }
+              - { label: "Supporting tagline (smaller, below positioning)", name: "tagline", widget: "text", hint: "Wrap words in **double asterisks** for bold, *single asterisks* for italic" }
               - { label: "Primary button label", name: "ctaPrimaryLabel", widget: "string" }
               - { label: "Primary button link", name: "ctaPrimaryHref", widget: "string" }
               - { label: "Secondary button label", name: "ctaSecondaryLabel", widget: "string" }
@@ -47,7 +47,7 @@ collections:
             name: "about"
             widget: "object"
             fields:
-              - { label: "Kicker (e.g. \"01 · About\")", name: "kicker", widget: "string" }
+              - { label: "Kicker", name: "kicker", widget: "string" }
               - { label: "Section heading", name: "title", widget: "text", hint: "Press enter for a line break" }
               - { label: "Body paragraph", name: "text", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
               - label: "Stat tiles"
@@ -70,15 +70,16 @@ collections:
                 widget: "list"
                 summary: "{{fields.role}} — {{fields.company}}"
                 fields:
-                  - { label: "Icon (emoji)", name: "icon", widget: "string" }
                   - { label: "Role title", name: "role", widget: "string" }
                   - { label: "Company", name: "company", widget: "string" }
                   - { label: "Dates (e.g. \"Jul 2025 - Present\")", name: "dates", widget: "string" }
-                  - label: "Bullet points"
+                  - { label: "Summary (shown on the card)", name: "summary", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
+                  - label: "Bullet points (not currently shown on site, kept for the resume/reference)"
                     name: "bullets"
                     widget: "list"
+                    required: false
                     field: { label: "Bullet", name: "bullet", widget: "text", hint: "Wrap words in **double asterisks** to make them bold" }
-                  - label: "Skill chips (optional)"
+                  - label: "Skill chips (optional, currently unused on site)"
                     name: "chips"
                     widget: "list"
                     required: false
@@ -90,19 +91,13 @@ collections:
             fields:
               - { label: "Heading", name: "title", widget: "string" }
               - { label: "Subtext", name: "sub", widget: "text" }
-              - label: "Columns (one per role)"
-                name: "columns"
+              - label: "Stats (flat grid, avoid repeating the same number twice)"
+                name: "stats"
                 widget: "list"
-                summary: "{{fields.heading}}"
+                summary: "{{fields.value}} — {{fields.label}}"
                 fields:
-                  - { label: "Column heading", name: "heading", widget: "string" }
-                  - label: "Stats"
-                    name: "stats"
-                    widget: "list"
-                    summary: "{{fields.value}} — {{fields.label}}"
-                    fields:
-                      - { label: "Value (e.g. \"269%\")", name: "value", widget: "string" }
-                      - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value (e.g. \"89%\")", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
 
           - label: "Projects section intro"
             name: "projectsSection"
@@ -127,6 +122,7 @@ collections:
                 name: "chips"
                 widget: "list"
                 field: { label: "Chip", name: "chip", widget: "string" }
+              - { label: "Why this way (single paragraph, real product reasoning, no invented claims)", name: "why", widget: "text", required: false }
               - { label: "Note", name: "note", widget: "string" }
               - { label: "Letter photo", name: "letterImage", widget: "image" }
 
@@ -146,7 +142,7 @@ collections:
                 name: "chips"
                 widget: "list"
                 field: { label: "Chip", name: "chip", widget: "string" }
-              - { label: "Proof line (italic, under the chips)", name: "proof", widget: "string" }
+              - { label: "Why this way (single paragraph, real product reasoning, no invented claims)", name: "why", widget: "text", required: false }
 
           - label: "Skills"
             name: "skills"
