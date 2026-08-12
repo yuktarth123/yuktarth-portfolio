@@ -466,13 +466,7 @@ ul { list-style: none; }
 .project-why[open] summary::after { transform: rotate(180deg); }
 .project-why summary:hover { color: var(--fg); }
 .project-why[open] summary { color: var(--fg); margin-bottom: 10px; }
-.project-why-list { display: flex; flex-direction: column; gap: 8px; padding-top: 2px; }
-.project-why-list li {
-  color: var(--fg-muted); font-size: 13px; line-height: 1.5; padding-left: 16px; position: relative;
-}
-.project-why-list li::before {
-  content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
-}
+.project-why-text { color: var(--fg-muted); font-size: 13px; line-height: 1.6; padding-top: 2px; }
 
 /* ---------- Skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-bottom: 56px; }

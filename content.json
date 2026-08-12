@@ -108,11 +108,7 @@
     "quote": "I take this opportunity to convey my profound appreciation for the outstanding work by you in designing and development of database digitization and management software VARMS for the unit.",
     "quoteAttribution": "Letter of Appreciation, Commanding Officer Col Ankit Misra, Jan 2026",
     "chips": ["Stakeholder Management", "Agile Delivery", "Product Strategy"],
-    "why": [
-      "Replaced a large stack of non-digital records that took hours to cross-check for basic answers.",
-      "Spent nearly 40% of the two-weekend sprint understanding the problem before writing any code, even under a hard deadline.",
-      "In daily use at the unit since deployment, without issues."
-    ],
+    "why": "Replaced a large stack of non-digital records that took hours to cross-check for basic answers. Spent nearly 40% of the two-weekend sprint understanding the problem before writing any code, even under a hard deadline. In daily use at the unit since deployment, without issues.",
     "note": "A private deployment for the Indian Army; there's no public link to visit.",
     "letterImage": "images/varms-letter.jpg"
   },
@@ -126,13 +122,7 @@
       "title": "Yanks TCG · Live Sale Platform",
       "description": "A real-time marketplace for a Pokémon card collector's WhatsApp community, with live bidding and numbered \"Box Break\" claims.",
       "chips": ["Real-time inventory", "Live bidding", "Box Breaks"],
-      "why": [
-        "Sellers were running inventory and sales entirely over WhatsApp DMs. Needed real browsing and stock visibility without losing that relationship.",
-        "Cheap, duplicate cards went unsold as fixed-price listings, since most buyers are completing a set, not chasing a single card. Selling them as bids got them moving.",
-        "Scarce, high-demand cards leave money on the table at a fixed price. Bidding lets buyer FOMO set the price instead.",
-        "Numbered Box Break slots turn pack-opening into a live event: buyers pick a \"lucky number\" for the card behind it, which drives engagement on its own.",
-        "Bidding ended up the most-used feature. Cards that sat unsold for months started moving once listed as bids."
-      ]
+      "why": "Sellers were running inventory and sales entirely over WhatsApp DMs and needed real browsing and stock visibility without losing that relationship. Cheap, duplicate cards went unsold as fixed-price listings, since most buyers are completing a set rather than chasing a single card, so selling them as bids got them moving. Scarce, high-demand cards leave money on the table at a fixed price, and bidding lets buyer FOMO set it instead. Numbered Box Break slots turn pack-opening into a live event, letting buyers pick a \"lucky number\" for the card behind it, which drives engagement on its own. Bidding ended up the most-used feature: cards that sat unsold for months started moving once listed as bids."
     },
     {
       "url": "https://yanks-diecast.vercel.app/",
@@ -143,10 +133,7 @@
       "title": "Yanks Diecast · Live Sale Platform",
       "description": "The same marketplace engine, extended for diecast car collectors with faceted search and dynamic pricing across dozens of live SKUs.",
       "chips": ["Faceted search", "Dynamic pricing", "Stock tracking"],
-      "why": [
-        "Validated first: polled the WhatsApp community, and over 70% wanted a diecast line before I built anything.",
-        "Reused the same marketplace engine instead of building a new one. Bidding and box-break-style claims generalized cleanly to a second collector category."
-      ]
+      "why": "Validated first: polled the WhatsApp community, and over 70% wanted a diecast line before building anything. Reused the same marketplace engine instead of a new one, since bidding and box-break-style claims generalized cleanly to a second collector category."
     },
     {
       "url": "https://math-tug-masters-main.vercel.app/",
@@ -157,10 +144,7 @@
       "title": "Math Tug-of-War · Classroom Game",
       "description": "A tug-of-war math game for classroom touchscreen TVs, with five difficulty tiers and a streak-based \"Fire Mode.\"",
       "chips": ["5 difficulty tiers", "Timed rounds", "Fire Mode streaks"],
-      "why": [
-        "Built for two teams to compete head-to-head on a shared classroom touchscreen, turning solo math practice into something social.",
-        "Streak-based Fire Mode rewards speed and accuracy under time pressure, not just correct answers."
-      ]
+      "why": "Built for two teams to compete head-to-head on a shared classroom touchscreen, turning solo math practice into something social. Streak-based Fire Mode rewards speed and accuracy under time pressure, not just correct answers."
     },
     {
       "url": "https://roomie-dish-dash-main.vercel.app/",
@@ -171,11 +155,7 @@
       "title": "Krishna Kunj Stays · Room Service",
       "description": "A room-service ordering tool built for the homestay I lived at, after one too many phone calls and WhatsApp messages to the owner just to order food. Guests pick their room, browse the menu, and the order gets formatted and sent straight to the kitchen over WhatsApp.",
       "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
-      "why": [
-        "Built after typing out the same WhatsApp message one too many times just to order coffee during a stay. Wanted to cut that friction on both sides.",
-        "Deliberately skipped payments and accounts. The goal was saving time, not building a transaction platform.",
-        "Adopted for day-to-day use at the homestay."
-      ]
+      "why": "Built after typing out the same WhatsApp message one too many times just to order coffee during a stay, wanting to cut that friction on both sides. Deliberately skipped payments and accounts, since the goal was saving time, not building a transaction platform. Adopted for day-to-day use at the homestay."
     }
   ],
   "skills": {
