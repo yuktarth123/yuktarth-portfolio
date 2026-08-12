@@ -180,8 +180,7 @@ function initInteractions() {
   if (savedTheme) root.setAttribute('data-theme', savedTheme);
 
   themeToggle.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') ||
-      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    const current = root.getAttribute('data-theme') || 'light';
     const next = current === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);

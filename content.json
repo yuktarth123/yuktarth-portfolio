@@ -7,11 +7,11 @@
     "ctaLabel": "Hire Me"
   },
   "hero": {
-    "eyebrow": "📍 Dehradun, India",
+    "eyebrow": "Dehradun, India",
     "headline": "Product Manager who",
     "headlineHighlight": "ships",
     "headlineEnd": ", not just plans.",
-    "subhead": "6+ years across edtech and fintech. Currently lead **CLMS**, ConveGenius's content & learning platform, after scaling SwiftChat's AI chatbots to **15M+ students**. I also design and ship my own products solo, end to end, using the same instincts I bring to my day job.",
+    "subhead": "6+ years across edtech and fintech. Currently leading **CLMS**, ConveGenius's content and learning platform, after scaling SwiftChat's AI chatbots to **15M+ students**. I also design and ship my own products solo, end to end.",
     "ctaPrimaryLabel": "See what I've built",
     "ctaPrimaryHref": "#projects",
     "ctaSecondaryLabel": "Get in touch",
@@ -20,7 +20,7 @@
   "about": {
     "kicker": "01 · About",
     "title": "I believe the fastest way to\nvalidate an idea is to build it.",
-    "text": "I'm a Product Manager currently leading **CLMS**, ConveGenius's content & learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 15M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games, using the same product instincts I bring to my day job.",
+    "text": "I'm a Product Manager currently leading **CLMS**, ConveGenius's content and learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 15M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games.",
     "stats": [
       { "count": 6, "suffix": "+", "label": "years in product" },
       { "count": 15, "suffix": "M+", "label": "students impacted\nvia SwiftChat" },
@@ -57,7 +57,7 @@
         "company": "ConveGenius",
         "dates": "Dec 2022 - Mar 2024",
         "bullets": [
-          "Delivered **25+ learning and engagement products** with intuitive user experiences and seamless technical execution",
+          "Delivered **25+ learning and engagement products** on SwiftChat, from concept to launch",
           "Redesigned onboarding and conversation flows, reducing user drop-offs and improving retention",
           "Developed two Python utilities: an image-to-text converter and a real-time API uptime checker that caught third-party failures before they caused outages",
           "Personally coded the **first SwiftChat bot with 3D model integration** (Periodic Table Bot) using AI-assisted development, taking engineering load off the tech team",
@@ -113,13 +113,13 @@
     "kicker": "03 · Projects",
     "title": "Things I've built end to end.",
     "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
-    "statLine": "🏆 Top 1% globally for code shipped on Lovable in 2025",
+    "statLine": "Top 1% globally for code shipped on Lovable in 2025",
     "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
   },
   "recognition": {
-    "badge": "🎖️ Official recognition",
+    "badge": "Official recognition",
     "title": "VARMS · Visitor & Resource Management System",
-    "text": "Built for the 330 Field Regiment, Indian Army. I volunteered to lead a remote team through a two-weekend sprint to conceive, build, and deploy a tailored database system streamlining administrative and HRMS workflows for the regiment.",
+    "text": "Built for the 330 Field Regiment, Indian Army. I volunteered to lead a remote team through a two-weekend sprint to conceive, build, and deploy a database system for the regiment's administrative and HRMS workflows.",
     "quote": "I take this opportunity to convey my profound appreciation for the outstanding work by you in designing and development of database digitization and management software VARMS for the unit.",
     "quoteAttribution": "Letter of Appreciation, Commanding Officer Col Ankit Misra, Jan 2026",
     "chips": ["Stakeholder Management", "Agile Delivery", "Product Strategy"],
