@@ -50,18 +50,37 @@ const CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-wi
 function renderRoleScene(r) {
   if (r.company === 'ConveGenius' && r.role === 'Product Manager') {
     return `
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="greet">
-            <div class="avatar-dot"></div>
-            <span class="greet-text">Hi Aanya! Ready for today's quiz?</span>
+      <div class="editor-panel">
+        <div class="editor-header">
+          <span class="editor-title">Assessment Creation</span>
+          <span class="editor-published-badge">${CHECK_ICON}Published</span>
+        </div>
+        <div class="editor-question">Which planet is closest to the Sun?</div>
+        <div class="editor-options">
+          <div class="editor-opt opt-a">A) Earth</div>
+          <div class="editor-opt opt-b correct">B) Mercury<span class="check-pop">${CHECK_ICON}</span></div>
+          <div class="editor-opt opt-c">C) Venus</div>
+        </div>
+      </div>
+    `;
+  }
+  if (r.company === 'ConveGenius' && r.role === 'Product Associate, SwiftChat') {
+    return `
+      <div class="chat-scene">
+        <div class="chat-row chat-row-1">
+          <div class="bot-avatar"></div>
+          <div class="bubble">New: Periodic Table Bot is live in 3D!</div>
+        </div>
+        <div class="chat-row chat-row-2">
+          <div class="bot-avatar"></div>
+          <div class="bubble">Engagement is climbing across the board.</div>
+        </div>
+        <div class="card-row">
+          <div class="stat-chip">
+            <span class="stat-chip-value">+89%</span>
+            <span class="stat-chip-label">Engagement</span>
           </div>
-          <div class="quiz-card">
-            <span class="quiz-q">Which planet is closest to the Sun?</span>
-            <div class="quiz-opt">Earth</div>
-            <div class="quiz-opt correct">Mercury<span class="check-pop">${CHECK_ICON}</span></div>
-          </div>
+          <div class="card-badge">${CHECK_ICON}</div>
         </div>
       </div>
     `;
