@@ -221,26 +221,6 @@ ul { list-style: none; }
 .role-summary strong { color: var(--fg); }
 .role-card .feature-chips { margin-top: 14px; }
 
-.role-details { margin-top: 16px; }
-.role-details summary {
-  cursor: pointer; list-style: none; font-size: 13.5px; font-weight: 600; color: var(--fg-muted);
-  display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s ease;
-}
-.role-details summary::-webkit-details-marker { display: none; }
-.role-details summary::after { content: "↓"; font-size: 12px; transition: transform 0.2s ease; }
-.role-details[open] summary::after { transform: rotate(180deg); }
-.role-details summary:hover { color: var(--fg); }
-.role-details[open] summary { color: var(--fg); margin-bottom: 12px; }
-
-.role-bullets { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
-.role-bullets li {
-  color: var(--fg-muted); font-size: 14.5px; padding-left: 20px; position: relative;
-}
-.role-bullets li::before {
-  content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
-}
-.role-bullets li strong { color: var(--fg); }
-
 /* ---------- Role scenes ---------- */
 .phone {
   width: 168px; height: 258px; border-radius: 26px; background: var(--bg-tint);

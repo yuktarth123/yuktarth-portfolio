@@ -126,12 +126,6 @@ function renderExperience(exp, impact) {
         </div>
         <p class="role-summary">${mdBold(r.summary)}</p>
         ${r.chips && r.chips.length ? `<div class="feature-chips">${r.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>` : ''}
-        <details class="role-details">
-          <summary>Show details</summary>
-          <ul class="role-bullets">
-            ${r.bullets.map(b => `<li>${mdBold(b)}</li>`).join('')}
-          </ul>
-        </details>
       </div>
       ${scene ? `<div class="role-scene">${scene}</div>` : ''}
     </div>
