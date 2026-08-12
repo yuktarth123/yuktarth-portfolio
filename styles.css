@@ -347,13 +347,16 @@ ul { list-style: none; }
 .impact-flat-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px;
 }
-.impact-flat-stat { display: flex; flex-direction: column; gap: 6px; }
+.impact-flat-stat { display: flex; flex-direction: column; gap: 4px; }
 .impact-flat-value {
-  font-size: 30px; font-weight: 800; letter-spacing: -0.01em;
+  font-size: clamp(32px, 4.2vw, 40px); font-weight: 800; letter-spacing: -0.02em; line-height: 1;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.impact-flat-label { font-size: 13px; color: var(--fg-muted); font-weight: 500; line-height: 1.3; }
+.impact-flat-label {
+  font-size: 11.5px; color: var(--fg-faint); font-weight: 600; line-height: 1.3;
+  text-transform: uppercase; letter-spacing: 0.03em;
+}
 
 @media (max-width: 640px) {
   .impact-flat-grid { grid-template-columns: repeat(2, 1fr); }

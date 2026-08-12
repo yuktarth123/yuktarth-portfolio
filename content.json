@@ -19,7 +19,7 @@
   },
   "about": {
     "kicker": "About",
-    "title": "I believe the fastest way to\nvalidate an idea is to build it.",
+    "title": "I believe the fastest way to validate\nan idea is to get close to the problem. Then build.",
     "text": "I'm a Product Manager currently leading **CLMS**, ConveGenius's content and learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 15M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games.",
     "stats": [
       { "count": 6, "suffix": "+", "label": "years in product" },
@@ -99,10 +99,10 @@
     "title": "Things I've built end to end.",
     "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
     "statLine": "Among Lovable's top 1% of builders in 2025",
-    "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
+    "subhead": "Products I built solo"
   },
   "recognition": {
-    "badge": "Official recognition",
+    "badge": "Official recognition · Indian Army",
     "title": "VARMS · Visitor & Resource Management System",
     "text": "Built for the 330 Field Regiment, Indian Army. I volunteered to lead a remote team through a two-weekend sprint to conceive, build, and deploy a database system for the regiment's administrative and HRMS workflows.",
     "quote": "I take this opportunity to convey my profound appreciation for the outstanding work by you in designing and development of database digitization and management software VARMS for the unit.",
