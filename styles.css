@@ -162,17 +162,6 @@ ul { list-style: none; }
 }
 .hero-tagline strong { color: var(--fg-muted); }
 .hero-tagline em { font-family: Georgia, "Iowan Old Style", ui-serif, serif; font-style: italic; color: var(--fg-muted); }
-.status-chip {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 7px 14px 7px 10px; border: 1px solid var(--border-strong); border-radius: 999px;
-  font-size: 13px; color: var(--fg-muted); font-weight: 500; margin-bottom: 32px; width: fit-content;
-}
-.status-dot {
-  width: 7px; height: 7px; border-radius: 50%; background: var(--accent-2);
-  animation: statusPulse 2.2s ease-in-out infinite;
-}
-@keyframes statusPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
-@media (prefers-reduced-motion: reduce) { .status-dot { animation: none; } }
 .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* ---------- Sections ---------- */

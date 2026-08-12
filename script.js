@@ -26,8 +26,6 @@ function renderHero(c) {
     `<span class="name-first">${escapeHtml(c.nameFirst)}</span><span class="name-last">${escapeHtml(c.nameLast)}</span>`;
   document.getElementById('heroPositioning').innerHTML = mdRich(c.positioning);
   document.getElementById('heroTagline').innerHTML = mdRich(c.tagline);
-  document.getElementById('heroStatus').innerHTML =
-    `<span class="status-dot"></span>${escapeHtml(c.statusChip)}`;
   document.getElementById('heroCtas').innerHTML = `
     <a href="${escapeHtml(c.ctaPrimaryHref)}" class="btn btn-primary">${escapeHtml(c.ctaPrimaryLabel)}</a>
     <a href="${escapeHtml(c.ctaSecondaryHref)}" class="btn btn-ghost">${escapeHtml(c.ctaSecondaryLabel)}</a>
