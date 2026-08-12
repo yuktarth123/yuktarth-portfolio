@@ -24,6 +24,7 @@ function renderHero(c) {
   document.getElementById('heroEyebrow').textContent = c.eyebrow;
   document.getElementById('heroName').innerHTML =
     `<span class="name-first">${escapeHtml(c.nameFirst)}</span><span class="name-last">${escapeHtml(c.nameLast)}</span>`;
+  document.getElementById('heroPositioning').innerHTML = mdRich(c.positioning);
   document.getElementById('heroTagline').innerHTML = mdRich(c.tagline);
   document.getElementById('heroStatus').innerHTML =
     `<span class="status-dot"></span>${escapeHtml(c.statusChip)}`;
@@ -141,12 +142,10 @@ function renderExperience(exp, impact) {
 
   document.getElementById('impactTitle').textContent = impact.title;
   document.getElementById('impactSub').textContent = impact.sub;
-  document.getElementById('impactCols').innerHTML = impact.columns.map(col => `
-    <div class="impact-col">
-      <h4>${escapeHtml(col.heading)}</h4>
-      <div class="impact-stats">
-        ${col.stats.map(s => `<div class="impact-stat"><span>${escapeHtml(s.value)}</span>${escapeHtml(s.label)}</div>`).join('')}
-      </div>
+  document.getElementById('impactStats').innerHTML = impact.stats.map(s => `
+    <div class="impact-flat-stat">
+      <span class="impact-flat-value">${escapeHtml(s.value)}</span>
+      <span class="impact-flat-label">${escapeHtml(s.label)}</span>
     </div>
   `).join('');
 }

@@ -10,6 +10,7 @@
     "eyebrow": "Product manager — Dehradun, India",
     "nameFirst": "Yuktarth",
     "nameLast": "Nagar",
+    "positioning": "Product Manager building 0-to-1 products from idea to launch. AI-native PM with 6+ years across edtech and fintech — currently leading CLMS at ConveGenius, and I've independently shipped four live products.",
     "tagline": "I turn 0-to-1 bets into *shipped* software, from CLMS at ConveGenius to marketplaces I built solo at 2am.",
     "statusChip": "Currently building CLMS at ConveGenius",
     "ctaPrimaryLabel": "See what I've built",
@@ -83,37 +84,22 @@
     ]
   },
   "impact": {
-    "title": "Impact, by role",
-    "sub": "Each role measured success differently, so these sit side by side rather than on one shared scale.",
-    "columns": [
-      {
-        "heading": "ConveGenius · CLMS",
-        "stats": [
-          { "value": "80%", "label": "flow-completion rate at launch" },
-          { "value": "<5 min", "label": "assessment creation time, down from hours" }
-        ]
-      },
-      {
-        "heading": "ConveGenius · SwiftChat",
-        "stats": [
-          { "value": "89%", "label": "engagement lift from iterative A/B testing" },
-          { "value": "15M+", "label": "students reached nationwide" }
-        ]
-      },
-      {
-        "heading": "SBI Card",
-        "stats": [
-          { "value": "80%", "label": "increase in digital engagement" },
-          { "value": "11+", "label": "project deliveries led" }
-        ]
-      }
+    "title": "Selected impact",
+    "sub": "The headline numbers from CLMS, SwiftChat, and SBI Card — the Experience section above has the story behind each one.",
+    "stats": [
+      { "value": "89%", "label": "SwiftChat engagement lift" },
+      { "value": "15M+", "label": "students reached" },
+      { "value": "80%", "label": "CLMS flow-completion rate" },
+      { "value": "<5 min", "label": "assessment creation time" },
+      { "value": "600+ hrs/mo", "label": "SBI Card support work eliminated" },
+      { "value": "11+", "label": "SBI Card deliveries led" }
     ]
   },
   "projectsSection": {
     "kicker": "Projects",
     "title": "Things I've built end to end.",
     "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
-    "statLine": "Top 1% globally for code shipped on Lovable in 2025",
+    "statLine": "Among Lovable's top 1% of builders in 2025",
     "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
   },
   "recognition": {
@@ -174,15 +160,15 @@
     "clusters": [
       {
         "name": "Product",
-        "tags": ["0-to-1 Product Development", "Roadmapping", "User Research", "PRD & Requirements Writing"]
+        "tags": ["0-to-1 Product Delivery", "Conversational AI", "AI Experimentation & A/B Testing", "User Research"]
       },
       {
-        "name": "Execution",
-        "tags": ["Agile & Scrum", "A/B Testing", "Wireframing (Figma, Whimsical)", "Stakeholder & Vendor Management"]
+        "name": "Technical",
+        "tags": ["API-driven Products", "Technical Requirements & PRDs", "Rapid Prototyping", "Wireframing (Figma, Whimsical)"]
       },
       {
         "name": "Builder toolkit",
-        "tags": ["AI Pair-Programming (Lovable, Claude Code)", "Rapid Prototyping", "Idea → Live Product"]
+        "tags": ["AI-assisted Development (Lovable, Claude Code)", "Stakeholder & Vendor Management", "Idea → Live Product"]
       }
     ],
     "education": {
