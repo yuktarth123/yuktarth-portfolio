@@ -7,18 +7,18 @@
     "ctaLabel": "Hire Me"
   },
   "hero": {
-    "eyebrow": "Dehradun, India",
-    "headline": "Product Manager who",
-    "headlineHighlight": "ships",
-    "headlineEnd": ", not just plans.",
-    "subhead": "6+ years across edtech and fintech. Currently leading **CLMS**, ConveGenius's content and learning platform, after scaling SwiftChat's AI chatbots to **15M+ students**. I also design and ship my own products solo, end to end.",
+    "eyebrow": "Product manager — Dehradun, India",
+    "nameFirst": "Yuktarth",
+    "nameLast": "Nagar",
+    "tagline": "I turn 0-to-1 bets into *shipped* software, from CLMS at ConveGenius to marketplaces I built solo at 2am.",
+    "statusChip": "Currently building CLMS at ConveGenius",
     "ctaPrimaryLabel": "See what I've built",
     "ctaPrimaryHref": "#projects",
     "ctaSecondaryLabel": "Get in touch",
     "ctaSecondaryHref": "#contact"
   },
   "about": {
-    "kicker": "01 · About",
+    "kicker": "About",
     "title": "I believe the fastest way to\nvalidate an idea is to build it.",
     "text": "I'm a Product Manager currently leading **CLMS**, ConveGenius's content and learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 15M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games.",
     "stats": [
@@ -29,14 +29,14 @@
     ]
   },
   "experience": {
-    "kicker": "02 · Experience",
+    "kicker": "Experience",
     "title": "Where I've put it into practice.",
     "roles": [
       {
-        "icon": "🗂️",
         "role": "Product Manager",
         "company": "ConveGenius",
         "dates": "Apr 2024 - Present",
+        "summary": "Lead product for CLMS and SwiftChat, from a 13-section PRD to an **89% engagement lift** across **15M+ students**.",
         "bullets": [
           "**CLMS (Jul 2025-Present):** Lead CLMS, ConveGenius's content and learning management platform, unifying content creation, translation, and distribution across client instances, including government education partners",
           "Defined a role-based access model across five user types (Super Admin, Admin, Creator, Reviewer, Translator), enforcing a strict content-approval hierarchy from creation to publish",
@@ -52,10 +52,10 @@
         "chips": ["CLMS", "SwiftChat", "RBAC", "Assessment Creation", "89% engagement"]
       },
       {
-        "icon": "💬",
         "role": "Product Associate, SwiftChat",
         "company": "ConveGenius",
         "dates": "Dec 2022 - Mar 2024",
+        "summary": "Shipped **25+ SwiftChat bots**, including the platform's first 3D-integrated bot, driving up to **89% year-over-year engagement gains**.",
         "bullets": [
           "Delivered **25+ learning and engagement products** on SwiftChat, from concept to launch",
           "Redesigned onboarding and conversation flows, reducing user drop-offs and improving retention",
@@ -66,10 +66,10 @@
         "chips": ["Python", "3D Integration", "AI Pair-Programming"]
       },
       {
-        "icon": "💼",
         "role": "AI Project Management (Management Trainee → Assistant Manager → Manager)",
         "company": "SBI Card",
         "dates": "May 2019 - Dec 2022",
+        "summary": "Promoted three times in 3.5 years running conversational AI projects, lifting chatbot logins **80%** and saving **600+ hours** of support work a month.",
         "bullets": [
           "Progressively promoted through three roles over 3.5 years, managing and delivering conversational AI projects across business functions",
           "Led project planning sessions with stakeholders across IT, Marketing, and Customer Service, directing a cross-functional team of developers and testers across **11+ project deliveries**",
@@ -110,7 +110,7 @@
     ]
   },
   "projectsSection": {
-    "kicker": "03 · Projects",
+    "kicker": "Projects",
     "title": "Things I've built end to end.",
     "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
     "statLine": "Top 1% globally for code shipped on Lovable in 2025",
@@ -173,7 +173,7 @@
     }
   ],
   "skills": {
-    "kicker": "04 · Skills",
+    "kicker": "Skills",
     "title": "What I bring to a team.",
     "clusters": [
       {
@@ -203,7 +203,7 @@
     }
   },
   "testimonialsSection": {
-    "kicker": "05 · Testimonials",
+    "kicker": "Testimonials",
     "title": "What people say about working with me."
   },
   "testimonials": [
@@ -233,7 +233,7 @@
     }
   ],
   "contact": {
-    "kicker": "06 · Contact",
+    "kicker": "Contact",
     "title": "Let's build something worth shipping.",
     "sub": "Open to Product Manager roles, especially 0-to-1, AI-native, and technical PM opportunities.",
     "email": "yuktarthnagar@gmail.com",

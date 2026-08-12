@@ -10,6 +10,11 @@ function escapeHtml(str) {
 function mdBold(str) {
   return escapeHtml(str).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 }
+function mdRich(str) {
+  return escapeHtml(str)
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+}
 function nl2br(str) {
   return escapeHtml(str).replace(/\n/g, '<br>');
 }
@@ -17,9 +22,11 @@ function nl2br(str) {
 // ---------- Render ----------
 function renderHero(c) {
   document.getElementById('heroEyebrow').textContent = c.eyebrow;
-  document.getElementById('heroHeadline').innerHTML =
-    `${escapeHtml(c.headline)}<br><span class="highlight">${escapeHtml(c.headlineHighlight)}</span>${escapeHtml(c.headlineEnd)}`;
-  document.getElementById('heroSubhead').innerHTML = mdBold(c.subhead);
+  document.getElementById('heroName').innerHTML =
+    `<span class="name-first">${escapeHtml(c.nameFirst)}</span><span class="name-last">${escapeHtml(c.nameLast)}</span>`;
+  document.getElementById('heroTagline').innerHTML = mdRich(c.tagline);
+  document.getElementById('heroStatus').innerHTML =
+    `<span class="status-dot"></span>${escapeHtml(c.statusChip)}`;
   document.getElementById('heroCtas').innerHTML = `
     <a href="${escapeHtml(c.ctaPrimaryHref)}" class="btn btn-primary">${escapeHtml(c.ctaPrimaryLabel)}</a>
     <a href="${escapeHtml(c.ctaSecondaryHref)}" class="btn btn-ghost">${escapeHtml(c.ctaSecondaryLabel)}</a>
@@ -41,23 +48,23 @@ function renderAbout(c) {
 function renderExperience(exp, impact) {
   document.getElementById('experienceKicker').textContent = exp.kicker;
   document.getElementById('experienceTitle').textContent = exp.title;
-  document.getElementById('timeline').innerHTML = exp.roles.map(r => `
-    <div class="timeline-item reveal">
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-        <div class="timeline-head">
-          <span class="timeline-icon">${r.icon}</span>
-          <div>
-            <h3>${escapeHtml(r.role)}</h3>
-            <p class="timeline-company">${escapeHtml(r.company)}</p>
-          </div>
-          <span class="timeline-date">${escapeHtml(r.dates)}</span>
+  document.getElementById('roles').innerHTML = exp.roles.map(r => `
+    <div class="role-card reveal">
+      <div class="role-head">
+        <div>
+          <h3>${escapeHtml(r.role)}</h3>
+          <p class="role-company">${escapeHtml(r.company)}</p>
         </div>
-        <ul class="timeline-list-2col">
+        <span class="role-date">${escapeHtml(r.dates)}</span>
+      </div>
+      <p class="role-summary">${mdBold(r.summary)}</p>
+      ${r.chips && r.chips.length ? `<div class="feature-chips">${r.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>` : ''}
+      <details class="role-details">
+        <summary>Show details</summary>
+        <ul class="role-bullets">
           ${r.bullets.map(b => `<li>${mdBold(b)}</li>`).join('')}
         </ul>
-        ${r.chips && r.chips.length ? `<div class="feature-chips">${r.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>` : ''}
-      </div>
+      </details>
     </div>
   `).join('');
 
