@@ -172,7 +172,8 @@
       "chips": ["Room-based menu", "Cart & instructions", "WhatsApp handoff"],
       "why": [
         "Built after typing out the same WhatsApp message one too many times just to order coffee during a stay — wanted to cut that friction on both sides.",
-        "Deliberately skipped payments and accounts: the goal was saving time, not building a transaction platform."
+        "Deliberately skipped payments and accounts: the goal was saving time, not building a transaction platform.",
+        "Adopted for day-to-day use at the homestay."
       ]
     }
   ],
