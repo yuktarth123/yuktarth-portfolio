@@ -13,6 +13,8 @@
   --accent-soft: rgba(255,90,54,0.10);
   --card: #ffffff;
   --shadow: 0 20px 50px rgba(0,0,0,0.08);
+  --good: #1d9e75;
+  --good-soft: rgba(29,158,117,0.12);
   --radius: 20px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", system-ui, sans-serif;
 }
@@ -31,6 +33,8 @@
   --accent-soft: rgba(255,90,54,0.14);
   --card: #16161c;
   --shadow: 0 20px 60px rgba(0,0,0,0.45);
+  --good: #1d9e75;
+  --good-soft: rgba(29,158,117,0.18);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -205,6 +209,13 @@ ul { list-style: none; }
 .role-card {
   background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 28px 30px;
+  display: flex; gap: 28px; align-items: flex-start;
+}
+.role-content { flex: 1; min-width: 0; }
+.role-scene { flex-shrink: 0; width: 200px; display: flex; justify-content: center; padding-top: 4px; }
+@media (max-width: 720px) {
+  .role-card { flex-direction: column; }
+  .role-scene { width: 100%; }
 }
 .role-head { display: flex; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
 .role-head h3 { font-size: 19px; font-weight: 700; }
@@ -236,6 +247,86 @@ ul { list-style: none; }
   content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: 700;
 }
 .role-bullets li strong { color: var(--fg); }
+
+/* ---------- Role scenes ---------- */
+.phone {
+  width: 168px; height: 258px; border-radius: 26px; background: var(--bg-tint);
+  border: 2px solid var(--border-strong); position: relative; overflow: hidden;
+  opacity: 0; transform: translateY(28px) scale(0.94);
+}
+.phone-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 46px; height: 5px; border-radius: 4px; background: var(--border-strong); }
+.phone-screen { position: absolute; inset: 20px 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+
+.greet { display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateY(10px); }
+.avatar-dot { width: 26px; height: 26px; border-radius: 50%; background: var(--accent-soft); flex-shrink: 0; position: relative; }
+.avatar-dot::before, .avatar-dot::after { content: ""; position: absolute; width: 3px; height: 3px; border-radius: 50%; background: var(--accent); top: 11px; }
+.avatar-dot::before { left: 8px; } .avatar-dot::after { left: 15px; }
+.greet-text { font-size: 10.5px; color: var(--fg-muted); font-weight: 600; }
+
+.quiz-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
+  display: flex; flex-direction: column; gap: 6px;
+  opacity: 0; transform: translateY(18px);
+}
+.quiz-q { font-size: 9.5px; font-weight: 700; color: var(--fg); line-height: 1.3; }
+.quiz-opt {
+  font-size: 9px; color: var(--fg-muted); border: 1px solid var(--border); border-radius: 6px;
+  padding: 5px 8px; display: flex; align-items: center; justify-content: space-between;
+}
+.quiz-opt.correct { border-color: var(--good); color: var(--good); background: var(--good-soft); font-weight: 600; }
+.check-pop {
+  width: 14px; height: 14px; border-radius: 50%; background: var(--good); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0.4);
+}
+.check-pop svg { width: 8px; height: 8px; }
+
+.chat-scene { width: 100%; max-width: 220px; display: flex; flex-direction: column; gap: 14px; }
+.chat-row { display: flex; align-items: flex-end; gap: 10px; opacity: 0; transform: translateX(-16px) translateY(8px); }
+.bot-avatar {
+  width: 30px; height: 30px; border-radius: 9px; background: var(--accent-soft); flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; position: relative;
+}
+.bot-avatar::before, .bot-avatar::after { content: ""; position: absolute; width: 3px; height: 3px; border-radius: 50%; background: var(--accent); top: 13px; }
+.bot-avatar::before { left: 9px; } .bot-avatar::after { left: 18px; }
+.bubble {
+  background: var(--bg-tint); border: 1px solid var(--border); border-radius: 14px 14px 14px 4px;
+  padding: 10px 14px; font-size: 12px; color: var(--fg); font-weight: 500; max-width: 165px; line-height: 1.4;
+}
+
+.card-row { display: flex; justify-content: flex-end; opacity: 0; transform: translateX(20px) rotate(4deg); position: relative; }
+.credit-card {
+  width: 108px; height: 66px; border-radius: 10px; position: relative;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+.credit-card::before { content: ""; position: absolute; top: 12px; left: 12px; width: 22px; height: 16px; border-radius: 3px; background: rgba(255,255,255,0.55); }
+.credit-card::after { content: ""; position: absolute; bottom: 12px; left: 12px; right: 12px; height: 6px; border-radius: 3px; background: rgba(255,255,255,0.35); }
+.card-badge {
+  position: absolute; top: -8px; right: -8px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--good); display: flex; align-items: center; justify-content: center;
+  opacity: 0; transform: scale(0.4);
+}
+.card-badge svg { width: 12px; height: 12px; }
+
+/* ---------- Scene animation sequencing ---------- */
+.role-scene.play .phone { animation: sceneLand 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s forwards; }
+.role-scene.play .greet { animation: sceneFadeUp 0.5s ease 0.55s forwards; }
+.role-scene.play .quiz-card { animation: sceneFadeUp 0.5s ease 0.85s forwards; }
+.role-scene.play .check-pop { animation: scenePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.25s forwards; }
+
+.role-scene.play .chat-row-1 { animation: sceneSlideRight 0.5s ease 0.15s forwards; }
+.role-scene.play .chat-row-2 { animation: sceneSlideRight 0.5s ease 0.55s forwards; }
+.role-scene.play .card-row { animation: sceneCardLand 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) 0.95s forwards; }
+.role-scene.play .card-badge { animation: scenePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.45s forwards; }
+
+@keyframes sceneLand { to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes sceneFadeUp { to { opacity: 1; transform: translateY(0); } }
+@keyframes scenePop { to { opacity: 1; transform: scale(1); } }
+@keyframes sceneSlideRight { to { opacity: 1; transform: translateX(0) translateY(0); } }
+@keyframes sceneCardLand { to { opacity: 1; transform: translateX(0) rotate(0deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .role-scene * { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
 
 /* ---------- Impact chart ---------- */
 .impact {

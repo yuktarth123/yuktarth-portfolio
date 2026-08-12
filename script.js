@@ -45,28 +45,76 @@ function renderAbout(c) {
   `).join('');
 }
 
+const CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+function renderRoleScene(r) {
+  if (r.company === 'ConveGenius' && r.role === 'Product Manager') {
+    return `
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="greet">
+            <div class="avatar-dot"></div>
+            <span class="greet-text">Hi Aanya! Ready for today's quiz?</span>
+          </div>
+          <div class="quiz-card">
+            <span class="quiz-q">Which planet is closest to the Sun?</span>
+            <div class="quiz-opt">Earth</div>
+            <div class="quiz-opt correct">Mercury<span class="check-pop">${CHECK_ICON}</span></div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  if (r.company === 'SBI Card') {
+    return `
+      <div class="chat-scene">
+        <div class="chat-row chat-row-1">
+          <div class="bot-avatar"></div>
+          <div class="bubble">Hi! I can help with your credit limit request.</div>
+        </div>
+        <div class="chat-row chat-row-2">
+          <div class="bot-avatar"></div>
+          <div class="bubble">Good news — your limit increase is approved.</div>
+        </div>
+        <div class="card-row">
+          <div class="credit-card"></div>
+          <div class="card-badge">${CHECK_ICON}</div>
+        </div>
+      </div>
+    `;
+  }
+  return '';
+}
+
 function renderExperience(exp, impact) {
   document.getElementById('experienceKicker').textContent = exp.kicker;
   document.getElementById('experienceTitle').textContent = exp.title;
-  document.getElementById('roles').innerHTML = exp.roles.map(r => `
+  document.getElementById('roles').innerHTML = exp.roles.map(r => {
+    const scene = renderRoleScene(r);
+    return `
     <div class="role-card reveal">
-      <div class="role-head">
-        <div>
-          <h3>${escapeHtml(r.role)}</h3>
-          <p class="role-company">${escapeHtml(r.company)}</p>
+      <div class="role-content">
+        <div class="role-head">
+          <div>
+            <h3>${escapeHtml(r.role)}</h3>
+            <p class="role-company">${escapeHtml(r.company)}</p>
+          </div>
+          <span class="role-date">${escapeHtml(r.dates)}</span>
         </div>
-        <span class="role-date">${escapeHtml(r.dates)}</span>
+        <p class="role-summary">${mdBold(r.summary)}</p>
+        ${r.chips && r.chips.length ? `<div class="feature-chips">${r.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>` : ''}
+        <details class="role-details">
+          <summary>Show details</summary>
+          <ul class="role-bullets">
+            ${r.bullets.map(b => `<li>${mdBold(b)}</li>`).join('')}
+          </ul>
+        </details>
       </div>
-      <p class="role-summary">${mdBold(r.summary)}</p>
-      ${r.chips && r.chips.length ? `<div class="feature-chips">${r.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>` : ''}
-      <details class="role-details">
-        <summary>Show details</summary>
-        <ul class="role-bullets">
-          ${r.bullets.map(b => `<li>${mdBold(b)}</li>`).join('')}
-        </ul>
-      </details>
+      ${scene ? `<div class="role-scene">${scene}</div>` : ''}
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   document.getElementById('impactTitle').textContent = impact.title;
   document.getElementById('impactSub').textContent = impact.sub;
@@ -239,6 +287,17 @@ function initInteractions() {
     });
   }
   window.addEventListener('scroll', sweepMissedReveals, { passive: true });
+
+  // Role scene landing animations
+  const sceneEls = document.querySelectorAll('.role-scene');
+  const sceneObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('play');
+      sceneObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.4 });
+  sceneEls.forEach(el => sceneObserver.observe(el));
 
   // Animated stat counters
   const statEls = document.querySelectorAll('.stat-num');
