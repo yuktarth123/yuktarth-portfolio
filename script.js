@@ -71,18 +71,16 @@ function renderRoleScene(r) {
   }
   if (r.company === 'ConveGenius' && r.role === 'Product Associate, SwiftChat') {
     return `
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="greet">
-            <div class="avatar-dot"></div>
-            <span class="greet-text">Hi Aanya! Ready for today's quiz?</span>
-          </div>
-          <div class="quiz-card">
-            <span class="quiz-q">Which planet is closest to the Sun?</span>
-            <div class="quiz-opt">Earth</div>
-            <div class="quiz-opt correct">Mercury<span class="check-pop">${CHECK_ICON}</span></div>
-          </div>
+      <div class="sc-panel">
+        <div class="sc-header">
+          <span class="sc-avatar"></span>
+          <span class="sc-title">Periodic Table</span>
+        </div>
+        <div class="sc-thread">
+          <div class="sc-msg sc-user sc-m1">Let's start!</div>
+          <div class="sc-msg sc-bot sc-m2">Explore elements in the periodic table! 🧪</div>
+          <div class="sc-msg sc-user sc-m3">Hydrogen</div>
+          <div class="sc-msg sc-bot sc-m4">H · Hydrogen — colorless gas, discovered by Henry Cavendish</div>
         </div>
       </div>
     `;

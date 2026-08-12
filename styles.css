@@ -222,31 +222,25 @@ ul { list-style: none; }
 .role-card .feature-chips { margin-top: 14px; }
 
 /* ---------- Role scenes ---------- */
-.phone {
-  width: 168px; height: 258px; border-radius: 26px; background: var(--bg-tint);
-  border: 2px solid var(--border-strong); position: relative; overflow: hidden;
-  opacity: 0; transform: translateY(28px) scale(0.94);
+.sc-panel {
+  width: 190px; background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  overflow: hidden;
+  opacity: 0; transform: translateY(28px) scale(0.96);
 }
-.phone-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 46px; height: 5px; border-radius: 4px; background: var(--border-strong); }
-.phone-screen { position: absolute; inset: 20px 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+.sc-header {
+  display: flex; align-items: center; gap: 8px; padding: 10px 12px;
+  border-bottom: 1px solid var(--border); background: var(--bg-tint);
+}
+.sc-avatar { width: 22px; height: 22px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); flex-shrink: 0; }
+.sc-title { font-size: 11px; font-weight: 700; color: var(--fg); }
+.sc-thread { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.sc-msg {
+  font-size: 9.5px; line-height: 1.4; padding: 7px 10px; border-radius: 12px; max-width: 88%;
+  opacity: 0; transform: translateY(8px);
+}
+.sc-user { align-self: flex-end; background: #3b6fed; color: #fff; border-bottom-right-radius: 3px; }
+.sc-bot { align-self: flex-start; background: var(--bg-tint); color: var(--fg); border: 1px solid var(--border); border-bottom-left-radius: 3px; }
 
-.greet { display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateY(10px); }
-.avatar-dot { width: 26px; height: 26px; border-radius: 50%; background: var(--accent-soft); flex-shrink: 0; position: relative; }
-.avatar-dot::before, .avatar-dot::after { content: ""; position: absolute; width: 3px; height: 3px; border-radius: 50%; background: var(--accent); top: 11px; }
-.avatar-dot::before { left: 8px; } .avatar-dot::after { left: 15px; }
-.greet-text { font-size: 10.5px; color: var(--fg-muted); font-weight: 600; }
-
-.quiz-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px;
-  display: flex; flex-direction: column; gap: 6px;
-  opacity: 0; transform: translateY(18px);
-}
-.quiz-q { font-size: 9.5px; font-weight: 700; color: var(--fg); line-height: 1.3; }
-.quiz-opt {
-  font-size: 9px; color: var(--fg-muted); border: 1px solid var(--border); border-radius: 6px;
-  padding: 5px 8px; display: flex; align-items: center; justify-content: space-between;
-}
-.quiz-opt.correct { border-color: var(--good); color: var(--good); background: var(--good-soft); font-weight: 600; }
 .check-pop {
   width: 14px; height: 14px; border-radius: 50%; background: var(--good); flex-shrink: 0;
   display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0.4);
@@ -306,10 +300,11 @@ ul { list-style: none; }
 .ila-pill-filled { background: #1c5fc4; color: #fff; }
 
 /* ---------- Scene animation sequencing ---------- */
-.role-scene.play .phone { animation: sceneLand 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s forwards; }
-.role-scene.play .greet { animation: sceneFadeUp 0.5s ease 0.55s forwards; }
-.role-scene.play .quiz-card { animation: sceneFadeUp 0.5s ease 0.85s forwards; }
-.role-scene.play .check-pop { animation: scenePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.25s forwards; }
+.role-scene.play .sc-panel { animation: sceneLand 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s forwards; }
+.role-scene.play .sc-m1 { animation: sceneFadeUp 0.4s ease 0.5s forwards; }
+.role-scene.play .sc-m2 { animation: sceneFadeUp 0.4s ease 0.75s forwards; }
+.role-scene.play .sc-m3 { animation: sceneFadeUp 0.4s ease 1.0s forwards; }
+.role-scene.play .sc-m4 { animation: sceneFadeUp 0.4s ease 1.25s forwards; }
 
 .role-scene.play .clms-panel { animation: sceneLand 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.05s forwards; }
 .role-scene.play .clms-field-1 { animation: sceneFadeUp 0.45s ease 0.5s forwards; }
