@@ -250,7 +250,7 @@ ul { list-style: none; }
 .impact-sub { color: var(--fg-faint); font-size: 14px; max-width: 640px; margin-bottom: 28px; }
 
 .impact-cols {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;
 }
 .impact-col {
   padding: 22px; background: var(--bg-tint); border: 1px solid var(--border); border-radius: 14px;

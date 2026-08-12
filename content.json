@@ -11,7 +11,7 @@
     "headline": "Product Manager who",
     "headlineHighlight": "ships",
     "headlineEnd": ", not just plans.",
-    "subhead": "6+ years across edtech and fintech. Currently own **CLMS**, ConveGenius's content & learning platform, after scaling SwiftChat's AI chatbots to **150M+ students**. I also design and ship my own products solo, end to end, using the same instincts I bring to my day job.",
+    "subhead": "6+ years across edtech and fintech. Currently lead **CLMS**, ConveGenius's content & learning platform, after scaling SwiftChat's AI chatbots to **15M+ students**. I also design and ship my own products solo, end to end, using the same instincts I bring to my day job.",
     "ctaPrimaryLabel": "See what I've built",
     "ctaPrimaryHref": "#projects",
     "ctaSecondaryLabel": "Get in touch",
@@ -20,11 +20,11 @@
   "about": {
     "kicker": "01 · About",
     "title": "I believe the fastest way to\nvalidate an idea is to build it.",
-    "text": "I'm a Product Manager currently owning **CLMS**, ConveGenius's content & learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 150M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games, using the same product instincts I bring to my day job.",
+    "text": "I'm a Product Manager currently leading **CLMS**, ConveGenius's content & learning management platform, after two-plus years scaling SwiftChat's AI chatbots to 15M+ students. Outside of work, I design and ship my own products solo, from live-sale marketplaces to classroom games, using the same product instincts I bring to my day job.",
     "stats": [
       { "count": 6, "suffix": "+", "label": "years in product" },
-      { "count": 150, "suffix": "M+", "label": "students impacted\nvia SwiftChat" },
-      { "count": 269, "suffix": "%", "label": "engagement lift from\nA/B testing" },
+      { "count": 15, "suffix": "M+", "label": "students impacted\nvia SwiftChat" },
+      { "count": 89, "suffix": "%", "label": "engagement lift from\nA/B testing" },
       { "count": 4, "suffix": "", "label": "products shipped\nsolo, top to bottom" }
     ]
   },
@@ -34,41 +34,49 @@
     "roles": [
       {
         "icon": "🗂️",
-        "role": "Product Manager, CLMS",
+        "role": "Product Manager",
         "company": "ConveGenius",
-        "dates": "Jul 2025 - Present",
+        "dates": "Apr 2024 - Present",
         "bullets": [
-          "Own product for **CLMS**, ConveGenius's platform for centralizing content creation, tagging, translation, and distribution across client instances, including government education department partners",
-          "Lead the platform's five core modules: User Management, Content Management (CMS), Learning Management, Export Management, and Master Data (LO) Management",
-          "Took the **Assessment Creation flow** from an engineering prototype to a production-ready feature, writing a 13-section PRD (~35 requirements) covering UX, acceptance criteria, and edge cases",
-          "Targeting a drop in assessment creation time from hours to **under 5 minutes** for non-technical content managers and curriculum leads",
-          "Implemented rapid prototyping and validation cycles to accelerate discovery and reduce development overhead"
+          "**CLMS (Jul 2025-Present):** Lead CLMS, ConveGenius's content and learning management platform, unifying content creation, translation, and distribution across client instances, including government education partners",
+          "Defined a role-based access model across five user types (Super Admin, Admin, Creator, Reviewer, Translator), enforcing a strict content-approval hierarchy from creation to publish",
+          "Drove requirements for multilingual translation and localization workflows, enabling content distribution to downstream client systems via API, CSV, and JSON exports",
+          "Took **Assessment Creation** from an unvalidated prototype to a production-ready feature, writing a 13-section PRD covering UX, edge cases, and acceptance criteria",
+          "At launch, achieved **80% flow-completion rate**, sub-3-minute Quick Generate path, sub-8-minute manual build path, and zero support tickets requiring engineering intervention",
+          "Reduced assessment creation time from hours to **under 5 minutes** for teachers, non-technical content managers, and curriculum leads",
+          "**SwiftChat (Apr 2024-Jun 2025):** Promoted from Product Associate to lead vision and roadmap for SwiftChat, ConveGenius's AI chatbot platform for education, reaching **15M+ students** nationwide",
+          "Improved engagement on SwiftChat by **89%** through iterative A/B testing, feature experimentation, and personalization",
+          "Partnered with design and engineering to turn user insights into shipped features across SwiftChat's chatbot experience",
+          "Collaborated with content and partnerships teams to launch scalable learning products for diverse student audiences"
         ],
-        "chips": ["User Management", "Content Management (CMS)", "Learning Management", "Export (CSV/JSON)", "Master Data (LO)"]
+        "chips": ["CLMS", "SwiftChat", "RBAC", "Assessment Creation", "89% engagement"]
       },
       {
         "icon": "💬",
-        "role": "Product Manager, SwiftChat",
+        "role": "Product Associate, SwiftChat",
         "company": "ConveGenius",
-        "dates": "Dec 2022 - Jun 2025",
+        "dates": "Dec 2022 - Mar 2024",
         "bullets": [
-          "Owned product vision and roadmap for chatbots on **SwiftChat**, a conversational learning platform impacting 150M+ students nationwide",
-          "Partnered with design, engineering, content, and partnerships teams to launch scalable learning products",
-          "Improved engagement by **269%** through iterative A/B testing and feature experimentation",
-          "Defined product success metrics and introduced data tracking dashboards for data-informed decision-making"
+          "Delivered **25+ learning and engagement products** with intuitive user experiences and seamless technical execution",
+          "Redesigned onboarding and conversation flows, reducing user drop-offs and improving retention",
+          "Developed two Python utilities: an image-to-text converter and a real-time API uptime checker that caught third-party failures before they caused outages",
+          "Personally coded the **first SwiftChat bot with 3D model integration** (Periodic Table Bot) using AI-assisted development, taking engineering load off the tech team",
+          "Drove **31-89% year-over-year engagement gains** across five engagement bots by shipping persistent menus, cross-bot discovery, and scorecards"
         ],
-        "chips": []
+        "chips": ["Python", "3D Integration", "AI Pair-Programming"]
       },
       {
         "icon": "💼",
-        "role": "AI Project Manager",
+        "role": "AI Project Management (Management Trainee → Assistant Manager → Manager)",
         "company": "SBI Card",
         "dates": "May 2019 - Dec 2022",
         "bullets": [
-          "Managed AI and automation projects across business functions, achieving an **80% increase** in digital engagement",
-          "Directed a cross-functional team of developers and testers, leading 11+ project deliveries",
-          "Designed project architecture using flowcharts and UML diagrams; coordinated API framework integration",
-          "Managed SIT/UAT cycles and owned stakeholder communication end to end"
+          "Progressively promoted through three roles over 3.5 years, managing and delivering conversational AI projects across business functions",
+          "Led project planning sessions with stakeholders across IT, Marketing, and Customer Service, directing a cross-functional team of developers and testers across **11+ project deliveries**",
+          "Enabled an **80% increase** in user logins via a chatbot channel and reduced **600+ man-hours monthly** on a customer support chatbot channel",
+          "Designed project architecture (flowcharts, UML, HTML prototypes) and coordinated API integration via SOAP UI, managing SIT/UAT cycles through ALM",
+          "Conducted project reviews and published feature-usage reports for senior management, informing prioritization decisions",
+          "As Management Trainee: shipped chatbot marketing campaigns reviewed by the CIO, simplified the credit-limit-increase process via CRM flow charts, and flagged a Wi-Fi vulnerability that could have exposed confidential data"
         ],
         "chips": []
       }
@@ -79,10 +87,17 @@
     "sub": "Each role measured success differently, so these sit side by side rather than on one shared scale.",
     "columns": [
       {
+        "heading": "ConveGenius · CLMS",
+        "stats": [
+          { "value": "80%", "label": "flow-completion rate at launch" },
+          { "value": "<5 min", "label": "assessment creation time, down from hours" }
+        ]
+      },
+      {
         "heading": "ConveGenius · SwiftChat",
         "stats": [
-          { "value": "269%", "label": "engagement lift from iterative A/B testing" },
-          { "value": "150M+", "label": "students reached nationwide" }
+          { "value": "89%", "label": "engagement lift from iterative A/B testing" },
+          { "value": "15M+", "label": "students reached nationwide" }
         ]
       },
       {
@@ -98,7 +113,7 @@
     "kicker": "03 · Projects",
     "title": "Things I've built end to end.",
     "intro": "Real, live products I conceived, designed, and shipped solo (not mockups).",
-    "statLine": "🏆 Top 1% globally for code shipped on Lovable in 2025, 422K+ lines generated across these builds",
+    "statLine": "🏆 Top 1% globally for code shipped on Lovable in 2025",
     "subhead": "Alongside that, four self-directed products I shipped solo, live and clickable:"
   },
   "recognition": {
@@ -171,11 +186,11 @@
       },
       {
         "name": "Leadership & Delivery",
-        "tags": ["Cross-functional Collaboration", "Stakeholder Management", "Digital Transformation", "Process Optimization", "Team Leadership", "A/B Testing"]
+        "tags": ["Cross-functional Collaboration", "Stakeholder Management", "Vendor Coordination", "Process Optimization", "Team Leadership", "A/B Testing"]
       },
       {
         "name": "Builder toolkit",
-        "tags": ["AI-assisted Development", "Rapid Prototyping", "End-to-end Delivery", "Idea → Live Product"]
+        "tags": ["AI Pair-Programming (Lovable, Claude Code)", "Rapid Prototyping", "End-to-end Delivery", "Idea → Live Product"]
       }
     ],
     "education": {
@@ -220,7 +235,7 @@
   "contact": {
     "kicker": "06 · Contact",
     "title": "Let's build something worth shipping.",
-    "sub": "Open to Product Manager roles, especially 0-to-1 and founding PM opportunities.",
+    "sub": "Open to Product Manager roles, especially 0-to-1, AI-native, and technical PM opportunities.",
     "email": "yuktarthnagar@gmail.com",
     "linkedin": "https://www.linkedin.com/in/yuktarth-nagar-b3920b147/",
     "resumeUrl": "files/Yuktarth_Nagar_Resume.pdf"
