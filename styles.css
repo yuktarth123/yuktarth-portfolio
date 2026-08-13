@@ -179,6 +179,8 @@ ul { list-style: none; }
 .section-stat-line {
   color: var(--fg-faint); font-size: 13.5px; font-weight: 600; margin-bottom: 40px;
 }
+.section-stat-line a { color: var(--fg-faint); text-decoration: underline; text-underline-offset: 2px; transition: color 0.2s ease; }
+.section-stat-line a:hover { color: var(--accent); }
 
 /* ---------- About ---------- */
 .about-text { font-size: 18px; color: var(--fg-muted); max-width: 680px; margin-bottom: 64px; }

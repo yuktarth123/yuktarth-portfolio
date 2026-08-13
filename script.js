@@ -148,7 +148,9 @@ function renderProjects(sec, recognition, projects) {
   document.getElementById('projectsKicker').textContent = sec.kicker;
   document.getElementById('projectsTitle').textContent = sec.title;
   document.getElementById('projectsIntro').textContent = sec.intro;
-  document.getElementById('projectsStatLine').textContent = sec.statLine;
+  document.getElementById('projectsStatLine').innerHTML = sec.statLineUrl
+    ? `<a href="${escapeHtml(sec.statLineUrl)}" target="_blank" rel="noopener">${escapeHtml(sec.statLine)} ↗</a>`
+    : escapeHtml(sec.statLine);
   document.getElementById('projectsSubhead').textContent = sec.subhead;
 
   document.getElementById('recognition').innerHTML = `

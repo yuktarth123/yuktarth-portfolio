@@ -107,6 +107,7 @@ collections:
               - { label: "Section heading", name: "title", widget: "string" }
               - { label: "Intro line", name: "intro", widget: "text" }
               - { label: "Stat/credibility line", name: "statLine", widget: "string" }
+              - { label: "Stat line link (e.g. verifying LinkedIn post)", name: "statLineUrl", widget: "string", required: false }
               - { label: "Subhead above the project grid", name: "subhead", widget: "string" }
 
           - label: "Recognition banner (Army letter)"
