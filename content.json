@@ -7,10 +7,10 @@
     "ctaLabel": "Hire Me"
   },
   "hero": {
-    "eyebrow": "Product manager — Dehradun, India",
+    "eyebrow": "Product manager · Dehradun, India",
     "nameFirst": "Yuktarth",
     "nameLast": "Nagar",
-    "positioning": "Product Manager building 0-to-1 products from idea to launch. AI-native PM with 6+ years across edtech and fintech — currently leading CLMS at ConveGenius, and I've independently shipped four live products.",
+    "positioning": "Product Manager building 0-to-1 products from idea to launch. AI-native PM with 6+ years across edtech and fintech. Currently leading CLMS at ConveGenius, and I've independently shipped four live products.",
     "tagline": "I turn 0-to-1 bets into *shipped* software, from CLMS at ConveGenius to marketplaces I built solo at 2am.",
     "ctaPrimaryLabel": "See what I've built",
     "ctaPrimaryHref": "#projects",
@@ -84,7 +84,7 @@
   },
   "impact": {
     "title": "Selected impact",
-    "sub": "The headline numbers from CLMS, SwiftChat, and SBI Card — the Experience section above has the story behind each one.",
+    "sub": "The headline numbers from CLMS, SwiftChat, and SBI Card. The Experience section above has the story behind each one.",
     "stats": [
       { "value": "89%", "label": "SwiftChat engagement lift" },
       { "value": "15M+", "label": "students reached" },
