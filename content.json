@@ -36,7 +36,7 @@
         "role": "Product Manager",
         "company": "ConveGenius",
         "dates": "Apr 2024 - Present",
-        "summary": "Lead CLMS, ConveGenius's content and learning management platform, unifying content creation, translation, and distribution across client instances, including government education partners.",
+        "summary": "Lead CLMS, ConveGenius's content and learning management platform, unifying content creation, translation, and distribution across client instances, including government education partners. Through Assessment Creation, achieved an **80% flow-completion rate**, sub-3-minute Quick Generate path, sub-8-minute manual build path, and **zero support tickets** requiring engineering intervention.",
         "bullets": [
           "**CLMS (Jul 2025-Present):** Lead CLMS, ConveGenius's content and learning management platform, unifying content creation, translation, and distribution across client instances, including government education partners",
           "Defined a role-based access model across five user types (Super Admin, Admin, Creator, Reviewer, Translator), enforcing a strict content-approval hierarchy from creation to publish",
