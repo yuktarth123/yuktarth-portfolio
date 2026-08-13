@@ -65,10 +65,6 @@ function renderRoleScene(r) {
             <p class="clms-stem-text">The chemical symbol for water is ___.</p>
           </div>
           <button class="clms-preview-btn">Preview Question</button>
-          <div class="clms-highlight">
-            <span class="clms-highlight-value">&lt;5 min</span>
-            <span class="clms-highlight-label">to create, down from hours</span>
-          </div>
         </div>
       </div>
     `;
