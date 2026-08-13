@@ -1,3 +1,6 @@
+// Toggle to bring back "Why this way" on the four project cards (VARMS is unaffected)
+const SHOW_PROJECT_WHY = false;
+
 // ---------- Helpers ----------
 function escapeHtml(str) {
   return String(str)
@@ -185,7 +188,7 @@ function renderProjects(sec, recognition, projects) {
         <h3>${escapeHtml(p.title)}</h3>
         <p>${escapeHtml(p.description)}</p>
         <div class="feature-chips">${p.chips.map(ch => `<span>${escapeHtml(ch)}</span>`).join('')}</div>
-        ${p.why ? `
+        ${SHOW_PROJECT_WHY && p.why ? `
         <details class="project-why" onclick="event.stopPropagation()">
           <summary>Why this way</summary>
           <p class="project-why-text">${escapeHtml(p.why)}</p>
