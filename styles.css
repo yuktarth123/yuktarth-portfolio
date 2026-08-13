@@ -340,9 +340,9 @@ ul { list-style: none; }
 .impact-sub { color: var(--fg-faint); font-size: 14px; max-width: 640px; margin-bottom: 28px; }
 
 .impact-flat-grid {
-  display: flex; flex-wrap: wrap; gap: 40px 56px;
+  display: flex; flex-wrap: wrap; gap: 32px 40px;
 }
-.impact-flat-stat { display: flex; flex-direction: column; gap: 4px; }
+.impact-flat-stat { display: flex; flex-direction: column; gap: 4px; min-width: 190px; }
 .impact-flat-value {
   font-size: clamp(32px, 4.2vw, 40px); font-weight: 800; letter-spacing: -0.02em; line-height: 1;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
@@ -354,7 +354,8 @@ ul { list-style: none; }
 }
 
 @media (max-width: 640px) {
-  .impact-flat-grid { gap: 28px 36px; }
+  .impact-flat-grid { gap: 28px 32px; }
+  .impact-flat-stat { min-width: 140px; }
 }
 
 /* ---------- Projects ---------- */
