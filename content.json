@@ -24,7 +24,7 @@
     "stats": [
       { "count": 6, "suffix": "+", "label": "years in product" },
       { "count": 15, "suffix": "M+", "label": "students impacted\nvia SwiftChat" },
-      { "count": 89, "suffix": "%", "label": "engagement lift from\nA/B testing" },
+      { "count": 89, "suffix": "%", "label": "engagement lift\non SwiftChat" },
       { "count": 4, "suffix": "", "label": "products shipped\nsolo, top to bottom" }
     ]
   },
@@ -88,10 +88,7 @@
     "stats": [
       { "value": "89%", "label": "SwiftChat engagement lift" },
       { "value": "15M+", "label": "students reached" },
-      { "value": "80%", "label": "CLMS flow-completion rate" },
-      { "value": "<5 min", "label": "assessment creation time" },
-      { "value": "600+ hrs/mo", "label": "SBI Card support work eliminated" },
-      { "value": "11+", "label": "SBI Card deliveries led" }
+      { "value": "600+ hrs/mo", "label": "SBI Card support work eliminated" }
     ]
   },
   "projectsSection": {
