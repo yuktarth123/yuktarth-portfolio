@@ -165,7 +165,7 @@ ul { list-style: none; }
 .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
 
 /* ---------- Sections ---------- */
-.section { padding: 120px 0; position: relative; z-index: 1; }
+.section { padding: 88px 0; position: relative; z-index: 1; }
 .section-tinted { background: var(--bg-tint); }
 .kicker {
   font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
@@ -529,7 +529,7 @@ ul { list-style: none; }
   .skills-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .edu-row { grid-template-columns: 1fr; }
-  .section { padding: 88px 0; }
+  .section { padding: 64px 0; }
 }
 
 @media (max-width: 720px) {
